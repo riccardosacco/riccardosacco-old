@@ -1,0 +1,43 @@
+.about-me {
+  .name {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .tagline {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgba($text-color, 0.7);
+    margin-bottom: 1.25rem;
+  }
+  .description {
+    color: rgba($text-color, 0.7);
+    margin-bottom: 1.5rem;
+  }
+}
+
+.overview {
+  .title {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .intro {
+    color: rgba($text-color, 0.7);
+    margin-bottom: 3rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3rem;
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .text {
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.15rem;
+      }
+    }
+  }
+}
