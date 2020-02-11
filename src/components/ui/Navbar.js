@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   const toggleNavbar = e => {
     const sidebar = document.querySelector(".sidebar");
-    const overlay = document.querySelector(".overlay");
+    const overlay = document.querySelector(".sidebar-overlay");
     const hamburger = document.querySelector(".hamburger");
     // If sidebar is already open
     if (sidebar.style.marginLeft !== "0px") {
@@ -18,7 +18,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="overlay" onClick={toggleNavbar}></div>
+      <div className="sidebar-overlay" onClick={toggleNavbar}></div>
       <div className="navbar-mobile">
         <div className="name">Riccardo Sacco</div>
         <div className="hamburger" onClick={toggleNavbar}>
