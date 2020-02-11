@@ -4,8 +4,9 @@ export default {
   bio:
     "Hi, my name is Riccardo Sacco and I'm a full stack developer. Welcome to my personal website!",
   job: "Full Stack Developer",
-  description:[
-    "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn by doing approach because I’ve always learned from mistakes.","I love my job so much that I don’t seem to be working. Sometimes I take decisions, sometimes I change my mind, but everytime I get to the best solution."
+  description: [
+    "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes.",
+    "I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution."
   ],
   social: [
     {
@@ -58,9 +59,10 @@ export default {
     }
   ],
   skills: {
-    title:"What I do",
-    intro:"I have more than 5 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use.",
-    list:[
+    title: "What I do",
+    intro:
+      "I have more than 5 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use.",
+    list: [
       {
         name: "HTML & CSS",
         icons: [

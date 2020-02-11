@@ -8,7 +8,7 @@ import Navbar from "./components/ui/Navbar";
 import settings from "./config/settings";
 
 export default () => (
-  <>
+  <div className="app">
     <Sidebar {...settings} />
     <div className="content">
       <Navbar />
@@ -20,5 +20,5 @@ export default () => (
         />
       </Switch>
     </div>
-  </>
+  </div>
 );

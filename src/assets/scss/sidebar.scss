@@ -8,6 +8,9 @@
   color: $text-color;
   text-align: center;
   padding: 1.5rem 1rem;
+  z-index: 1;
+  transition: 0.5s;
+  overflow-y: auto;
   @include media-breakpoint-down(md) {
     & {
       margin-left: -$sidebar-width;

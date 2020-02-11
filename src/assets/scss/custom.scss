@@ -8,12 +8,24 @@ body {
   @include media-breakpoint-down(md) {
     & {
       margin-left: 0;
-      padding-top: 4rem;
+      padding-top: 3rem;
     }
   }
   @include media-breakpoint-down(sm) {
     & {
-      padding-top: 5rem;
+      padding-top: 6rem;
     }
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
 }
