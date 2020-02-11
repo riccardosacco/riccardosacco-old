@@ -43,7 +43,7 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: $secondary-color;
     -webkit-transition: 0.4s;
     transition: 0.4s;
 
@@ -68,11 +68,7 @@ hr {
   }
   input {
     &:checked + .slider {
-      background-color: $secondary-color;
-    }
-
-    &:focus + .slider {
-      box-shadow: 0 0 1px $secondary-color;
+      background-color: $primary-color;
     }
 
     &:checked + .slider:before {

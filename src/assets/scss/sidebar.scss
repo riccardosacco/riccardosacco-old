@@ -11,9 +11,15 @@
   z-index: 1;
   transition: 0.5s;
   overflow-y: auto;
+  box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.1);
   @include media-breakpoint-down(md) {
     & {
       margin-left: -$sidebar-width;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    & {
+      padding-bottom: 7rem;
     }
   }
   .name {
@@ -63,7 +69,7 @@
         color: $text-color;
       }
       &.active {
-        color: $secondary-color;
+        color: $text-color;
       }
     }
   }
@@ -82,6 +88,7 @@
   opacity: 0;
   transition: 0.5s;
   cursor: pointer;
+  visibility: hidden;
   @include media-breakpoint-up(lg) {
     opacity: 0 !important;
   }

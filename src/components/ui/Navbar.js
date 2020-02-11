@@ -9,10 +9,12 @@ export default function Navbar() {
     if (sidebar.style.marginLeft !== "0px") {
       sidebar.style.marginLeft = "0px";
       overlay.style.opacity = 1;
+      overlay.style.visibility = "initial";
       hamburger.classList.add("change");
     } else {
       sidebar.style.marginLeft = null;
       overlay.style.opacity = 0;
+      overlay.style.visibility = null;
       hamburger.classList.remove("change");
     }
   };
@@ -26,9 +28,6 @@ export default function Navbar() {
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
-        {/* <button className="hamburger" onClick={toggleNavbar}>
-          <i className="fa fa-bars fa-2x"></i>
-        </button> */}
       </div>
     </>
   );

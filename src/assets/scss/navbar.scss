@@ -14,7 +14,8 @@
     }
   }
   @include media-breakpoint-down(sm) {
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    background-color: $secondary-color;
   }
   .name {
     font-size: 1.75rem;
