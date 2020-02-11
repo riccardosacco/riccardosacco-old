@@ -2,7 +2,6 @@ import React from "react";
 
 import Social from "./Social";
 import Nav from "./Nav";
-import Button from "../ui/Button";
 
 const Switch = () => {
   return (
