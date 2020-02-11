@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Button from "../../components/ui/Button";
 
 export default ({ name, job, description }) => (
@@ -7,11 +7,11 @@ export default ({ name, job, description }) => (
       <h2 className="name">{name}</h2>
       <div className="tagline">{job}</div>
       <div className="description">
-        {description.map(text => (
-          <>
+        {description.map((text, index) => (
+          <Fragment key={index}>
             {text}
             <br />
-          </>
+          </Fragment>
         ))}
       </div>
       <Button text="Portfolio" icon="fa fa-arrow-alt-circle-right" />
