@@ -3,10 +3,17 @@ body {
 }
 
 .content {
+  position: relative;
   margin-left: $sidebar-width;
   @include media-breakpoint-down(md) {
     & {
       margin-left: 0;
+      padding-top: 4rem;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    & {
+      padding-top: 5rem;
     }
   }
 }

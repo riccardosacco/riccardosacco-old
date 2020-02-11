@@ -14,7 +14,7 @@ const NavItem = ({ path, icon, label }) => (
 const Nav = ({ navItems }) => (
   <nav className="nav">
     {navItems.map(navItem => (
-      <NavItem {...navItem} />
+      <NavItem key={navItem.label} {...navItem} />
     ))}
   </nav>
 );

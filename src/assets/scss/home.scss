@@ -2,7 +2,7 @@
   padding: 3rem;
   @include media-breakpoint-down(sm) {
     & {
-      padding: 1.5rem;
+      padding: 0;
     }
   }
 }
@@ -10,6 +10,11 @@
   .name {
     font-weight: bold;
     font-size: 3rem;
+    @include media-breakpoint-down(sm) {
+      & {
+        display: none;
+      }
+    }
   }
   .tagline {
     font-size: 1.5rem;

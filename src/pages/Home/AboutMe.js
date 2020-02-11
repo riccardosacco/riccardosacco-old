@@ -14,8 +14,8 @@ export default ({ name, job, description }) => (
           </>
         ))}
       </div>
-      <Button text="View Portfolio" icon="fa fa-arrow-alt-circle-right" />
-      <Button text="View Resume" icon="fa fa-file-alt" />
+      <Button text="Portfolio" icon="fa fa-arrow-alt-circle-right" />
+      <Button text="Resume" icon="fa fa-file-alt" />
     </div>
   </section>
 );

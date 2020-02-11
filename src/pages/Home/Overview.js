@@ -3,7 +3,7 @@ import React from "react";
 export default ({ skills }) => (
   <section className="overview home">
     <div className="container">
-      <h2 class="title">{skills.title}</h2>
+      <h2 className="title">{skills.title}</h2>
       <div className="intro">{skills.intro}</div>
       <div className="grid">
         {skills.list.map(skill => (
