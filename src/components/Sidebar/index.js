@@ -19,9 +19,7 @@ const Sidebar = ({ name, avatar, bio, social, navigation }) => {
       <img className="avatar" src={avatar} alt={name} />
       <p className="bio">{bio}</p>
       <Social social={social} />
-      <hr />
       <Nav navItems={navigation} />
-      <hr />
       <h4 className="toggle-mode mt-4">
         <i className="fa fa-adjust"></i> Dark Mode
       </h4>
