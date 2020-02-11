@@ -1,12 +1,19 @@
-import React from "react"
+import React from "react";
 import Button from "../../components/ui/Button";
 
-export default ({name,job,description}) => (
-  <section className="about-me p-5">
+export default ({ name, job, description }) => (
+  <section className="about-me home">
     <div className="container">
       <h2 className="name">{name}</h2>
       <div className="tagline">{job}</div>
-      <div className="description">{description.map(text => <>{text}<br/></>)}</div>
+      <div className="description">
+        {description.map(text => (
+          <>
+            {text}
+            <br />
+          </>
+        ))}
+      </div>
       <Button text="View Portfolio" icon="fa fa-arrow-alt-circle-right" />
       <Button text="View Resume" icon="fa fa-file-alt" />
     </div>

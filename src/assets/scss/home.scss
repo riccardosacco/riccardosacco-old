@@ -1,3 +1,11 @@
+.home {
+  padding: 3rem;
+  @include media-breakpoint-down(sm) {
+    & {
+      padding: 1.5rem;
+    }
+  }
+}
 .about-me {
   .name {
     font-weight: bold;
@@ -8,6 +16,11 @@
     font-weight: 200;
     color: rgba($text-color, 0.7);
     margin-bottom: 1.25rem;
+    @include media-breakpoint-down(sm) {
+      & {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
   .description {
     color: rgba($text-color, 0.7);
@@ -28,6 +41,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 3rem;
+    @include media-breakpoint-down(sm) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
     .grid-item {
       display: flex;
       flex-direction: column;
@@ -37,6 +55,7 @@
         margin-top: 1rem;
         font-weight: bold;
         font-size: 1.15rem;
+        text-align: center;
       }
     }
   }

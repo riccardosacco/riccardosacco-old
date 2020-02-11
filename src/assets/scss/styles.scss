@@ -1,10 +1,10 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-@import "./variables.scss";
+@import "variables";
 
-@import "./ui.scss";
+@import "ui";
 
-@import "./sidebar.scss";
-@import "./home.scss";
+@import "sidebar";
+@import "home";
 
-@import "./custom.scss";
+@import "custom";

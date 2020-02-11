@@ -1,12 +1,10 @@
-import React from "react"
+import React from "react";
 
-export default ({skills}) => (
-  <section className="overview p-5">
+export default ({ skills }) => (
+  <section className="overview home">
     <div className="container">
       <h2 class="title">{skills.title}</h2>
-      <div className="intro">
-        {skills.intro}
-      </div>
+      <div className="intro">{skills.intro}</div>
       <div className="grid">
         {skills.list.map(skill => (
           <div className="grid-item">
@@ -21,4 +19,4 @@ export default ({skills}) => (
       </div>
     </div>
   </section>
-)
+);

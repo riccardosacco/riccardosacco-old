@@ -3,11 +3,16 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 280px;
+  width: $sidebar-width;
   background: lighten($primary-color, 6);
   color: $text-color;
   text-align: center;
   padding: 1.5rem 1rem;
+  @include media-breakpoint-down(md) {
+    & {
+      margin-left: -$sidebar-width;
+    }
+  }
   .name {
     font-size: 1.5rem;
   }
