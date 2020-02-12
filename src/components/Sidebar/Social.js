@@ -8,6 +8,7 @@ export default ({ social }) => (
         href={item.link}
         target="_blank"
         rel="noopener noreferrer"
+        style={{ background: item.color && item.color }}
       >
         <i className={`fab fa-${item.name}`}></i>
       </a>

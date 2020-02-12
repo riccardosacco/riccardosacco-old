@@ -20,10 +20,6 @@ const Sidebar = ({ name, avatar, bio, social, navigation }) => {
       <p className="bio">{bio}</p>
       <Social social={social} />
       <Nav navItems={navigation} />
-      <h4 className="toggle-mode mt-4">
-        <i className="fa fa-adjust"></i> Dark Mode
-      </h4>
-      <Switch />
     </div>
   );
 };

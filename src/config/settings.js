@@ -11,19 +11,24 @@ export default {
   social: [
     {
       name: "facebook",
-      link: "https://www.facebook.com/riccardo.sacco.90"
+      link: "https://www.facebook.com/riccardo.sacco.90",
+      color: "#3b5998"
     },
     {
       name: "github",
-      link: "https://github.com/rickybag/"
+      link: "https://github.com/rickybag/",
+      color: "#333"
     },
     {
       name: "linkedin",
-      link: "https://www.linkedin.com/in/riccardo-sacco"
+      link: "https://www.linkedin.com/in/riccardo-sacco",
+      color: "#0976b4"
     },
     {
       name: "instagram",
-      link: "https://www.instagram.com/rickysacco99/"
+      link: "https://www.instagram.com/rickysacco99/",
+      color:
+        "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)"
     }
   ],
   navigation: [

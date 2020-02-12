@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  bottom: 0;
   width: $sidebar-width;
   background: lighten($primary-color, 6);
   color: $text-color;
@@ -15,11 +15,6 @@
   @include media-breakpoint-down(md) {
     & {
       margin-left: -$sidebar-width;
-    }
-  }
-  @include media-breakpoint-down(md) {
-    & {
-      padding-bottom: 7rem;
     }
   }
   .name {
@@ -73,9 +68,6 @@
         color: $text-color;
       }
     }
-  }
-  .toggle-mode {
-    font-size: 0.875rem;
   }
 }
 
