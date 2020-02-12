@@ -4,7 +4,7 @@ import Button from "../../components/ui/Button";
 export default ({ name, job, description }) => (
   <section className="about-me home">
     <div className="container">
-      <h2 className="name">{name}</h2>
+      <h1 className="name">{name}</h1>
       <div className="tagline">{job}</div>
       <div className="description">
         {description.map((text, index) => (
@@ -14,7 +14,7 @@ export default ({ name, job, description }) => (
           </Fragment>
         ))}
       </div>
-      <Button text="Portfolio" icon="fa fa-arrow-alt-circle-right" />
+      <Button text="Portfolio" icon="fa fa-laptop-code" />
       <Button text="Resume" icon="fa fa-file-alt" />
     </div>
   </section>

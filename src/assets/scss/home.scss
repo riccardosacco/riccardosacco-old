@@ -2,14 +2,13 @@
   padding: 3rem;
   @include media-breakpoint-down(sm) {
     & {
-      padding: 0;
+      padding: 1rem 0;
     }
   }
 }
 .about-me {
   .name {
     font-weight: bold;
-    font-size: 3rem;
     @include media-breakpoint-down(sm) {
       & {
         display: none;
@@ -36,7 +35,6 @@
 .overview {
   .title {
     font-weight: bold;
-    font-size: 2rem;
   }
   .intro {
     color: rgba($text-color, 0.7);
@@ -63,5 +61,65 @@
         text-align: center;
       }
     }
+  }
+}
+
+.portfolio {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+
+    .portfolio-item {
+      position: relative;
+      $portfolio-border-radius: 0.5rem;
+      border-radius: $portfolio-border-radius;
+      overflow: hidden;
+      cursor: pointer;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+      }
+
+      &:hover > .overlay {
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .background {
+        max-width: 100%;
+        padding-top: 50%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: $portfolio-border-radius $portfolio-border-radius 0 0;
+      }
+
+      .details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0.5rem 1rem;
+        border-radius: 0 0 $portfolio-border-radius $portfolio-border-radius;
+
+        .title {
+          font-size: 1.5rem;
+        }
+        .technologies {
+          font-size: 0.75rem;
+          color: rgba($text-color, 0.8);
+        }
+      }
+    }
+  }
+  .portfolio-button {
+    padding: 1rem;
+    text-align: center;
   }
 }

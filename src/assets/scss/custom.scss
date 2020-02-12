@@ -1,19 +1,32 @@
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: $font-family;
 }
 
-.content {
-  position: relative;
-  margin-left: $sidebar-width;
-  @include media-breakpoint-down(md) {
-    & {
-      margin-left: 0;
-      padding-top: 3rem;
-    }
-  }
-  @include media-breakpoint-down(sm) {
-    & {
-      padding-top: 6rem;
-    }
-  }
+h1 {
+  font-size: 3rem;
+  color: $text-color;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 0.1rem;
+}
+
+hr {
+  border-color: rgba($text-color, 0.1);
 }

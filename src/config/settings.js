@@ -144,5 +144,156 @@ export default {
         ]
       }
     ]
-  }
+  },
+  portfolio: [
+    {
+      title: "Loyable",
+      subtitle: "Digital loyalty platform",
+      client: "Loyable Sagl",
+      screenshots: ["loyable1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "React"]
+        },
+        {
+          name: "Backend",
+          values: ["NodeJS", "Express", "MongoDB"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Evaluation Form",
+      subtitle: "Questionario digitale feedback per eventi",
+      client: "ADM Media Consulting",
+      screenshots: ["evaluationform1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["PHP", "MySQL"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Live Event",
+      subtitle: "Piattaforma per la gestione di eventi live streaming",
+      client: "ADM Media Consulting",
+      screenshots: ["live-event1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["PHP", "MySQL"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Controllo Ore",
+      subtitle: "Gestionale controllo ore integrato con SAP",
+      client: "Veragouth",
+      screenshots: ["controllo-ore1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["PHP", "MySQL"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Gestione Anagrafica",
+      subtitle: "Piattaforma gestione anagrafica multiutente",
+      client: "SG Lugano",
+      screenshots: ["anagrafica1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["PHP", "MySQL"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Catalogo Piante",
+      subtitle: "Catalogo digitale con integrazione e-commerce",
+      client: "Peirano Vivai",
+      screenshots: ["catalogo-piante1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["PHP", "MySQL"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Gestione Flotta",
+      subtitle: "Piattaforma per organizzazione flotta veicoli",
+      client: "Romantic Tour",
+      screenshots: ["gestionale-bus1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["PHP", "MySQL"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "Modulo Preventivo",
+      subtitle: "Modulo per richiesta preventivo prodotti",
+      client: "Ghielmimport",
+      screenshots: ["richiesta-offerta1.png"],
+      technologies: [
+        {
+          name: "Frontend",
+          values: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+        },
+        {
+          name: "Backend",
+          values: ["NodeJS", "Express"]
+        }
+      ],
+      description: ""
+    },
+    {
+      title: "REX.CH",
+      subtitle: "Sito web istituzionale",
+      client: "REX Articoli Tecnici SA",
+      screenshots: ["rex1.png"],
+      technologies: [
+        {
+          name: "CMS",
+          values: ["WordPress", "Elementor"]
+        }
+      ],
+      description: ""
+    }
+  ]
 };

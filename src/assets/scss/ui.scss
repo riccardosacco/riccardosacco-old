@@ -4,6 +4,22 @@
   min-height: 100vh;
 }
 
+.content {
+  position: relative;
+  margin-left: $sidebar-width;
+  @include media-breakpoint-down(md) {
+    & {
+      margin-left: 0;
+      padding-top: 3rem;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    & {
+      padding-top: 4.5rem;
+    }
+  }
+}
+
 .button {
   display: inline-block;
   background: $secondary-color;
@@ -19,8 +35,4 @@
     color: $text-color;
     text-decoration: none;
   }
-}
-
-hr {
-  border-color: rgba($text-color, 0.1);
 }

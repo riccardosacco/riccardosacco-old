@@ -1,14 +1,14 @@
 import React from "react";
 
-import AboutMe from "./AboutMe"
-import Overview from "./Overview"
+import AboutMe from "./AboutMe";
+import Overview from "./Overview";
+import Portfolio from "./Portfolio";
 
-
-const Home = (props) => (
+const Home = props => (
   <>
     <AboutMe {...props} />
-    <hr />
-    <Overview {...props}/>
+    <Overview {...props} />
+    <Portfolio {...props} />
   </>
 );
 
