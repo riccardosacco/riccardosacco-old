@@ -8,7 +8,7 @@
   color: $text-color;
   text-align: center;
   padding: 1.5rem 1rem;
-  z-index: 9999;
+  z-index: 1001;
   transition: 0.5s;
   overflow-y: auto;
   box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.1);
@@ -19,6 +19,12 @@
   }
   .name {
     font-size: 1.5rem;
+    display: none;
+    @include media-breakpoint-down(md) {
+      & {
+        display: block;
+      }
+    }
   }
   .avatar {
     max-width: 160px;
@@ -72,7 +78,7 @@
 }
 
 .sidebar-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

@@ -20,9 +20,9 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="sidebar-overlay" onClick={toggleNavbar}></div>
       <div className="navbar-mobile">
-        <div className="name">Riccardo Sacco</div>
+        <div className="sidebar-overlay" onClick={toggleNavbar}></div>
+        <h1 className="name">Riccardo Sacco</h1>
         <div className="hamburger" onClick={toggleNavbar}>
           <div className="bar1"></div>
           <div className="bar2"></div>

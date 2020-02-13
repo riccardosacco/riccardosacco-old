@@ -7,20 +7,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
-  background-color: $primary-color;
-  z-index: 9998;
+  z-index: 1000;
   @include media-breakpoint-down(md) {
     & {
       display: flex;
     }
   }
   @include media-breakpoint-down(sm) {
+    background-color: $primary-color;
     box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
   }
   .name {
     font-size: 1.75rem;
     font-weight: bold;
     visibility: hidden;
+    margin: 0;
     @include media-breakpoint-down(sm) {
       visibility: initial;
     }
