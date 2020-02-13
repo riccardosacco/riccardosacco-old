@@ -14,8 +14,8 @@ export default ({ name, job, description }) => (
           </Fragment>
         ))}
       </div>
-      <Button text="Portfolio" icon="fa fa-laptop-code" />
-      <Button text="Resume" icon="fa fa-file-alt" />
+      <Button text="Portfolio" icon="fa fa-laptop-code" href="/portfolio" />
+      <Button text="Resume" icon="fa fa-file-alt" href="/resume" />
     </div>
   </section>
 );

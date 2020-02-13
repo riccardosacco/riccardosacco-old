@@ -22,7 +22,8 @@ const PortfolioItem = ({ project }) => (
 const Portfolio = ({ portfolio }) => (
   <section className="portfolio home">
     <div className="container">
-      <h2>Portfolio</h2>
+      <h2>My portfolio</h2>
+      <p>Some of my works</p>
       <div className="portfolio-grid">
         {portfolio.slice(0, 6).map(project => (
           <PortfolioItem project={project} />

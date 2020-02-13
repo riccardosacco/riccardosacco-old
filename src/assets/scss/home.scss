@@ -44,6 +44,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 3rem;
+    @include media-breakpoint-down(md) {
+      & {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
     @include media-breakpoint-down(sm) {
       & {
         grid-template-columns: repeat(2, 1fr);
@@ -98,6 +103,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: $portfolio-border-radius $portfolio-border-radius 0 0;
+        @include media-breakpoint-down(sm) {
+          & {
+            padding-top: 35%;
+          }
+        }
       }
 
       .details {
@@ -105,9 +115,18 @@
         bottom: 0;
         left: 0;
         right: 0;
+        top: 0;
         padding: 0.5rem 1rem;
         border-radius: 0 0 $portfolio-border-radius $portfolio-border-radius;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        @include media-breakpoint-down(sm) {
+          & {
+            justify-content: center;
+            align-items: center;
+          }
+        }
         .title {
           font-size: 1.5rem;
         }
