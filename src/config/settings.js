@@ -235,7 +235,7 @@ export default {
         description: ""
       },
       {
-        title: "Catalogo Piante",
+        title: "Web Catalog",
         subtitle: "Catalogo digitale con integrazione e-commerce",
         client: "Peirano Vivai",
         screenshots: ["catalogo-piante1.png"],
