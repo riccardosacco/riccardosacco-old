@@ -24,7 +24,7 @@ const Portfolio = ({ portfolio }) => (
     <div className="container">
       <h2>Portfolio</h2>
       <div className="portfolio-grid">
-        {portfolio.map(project => (
+        {portfolio.slice(0, 6).map(project => (
           <PortfolioItem project={project} />
         ))}
       </div>
