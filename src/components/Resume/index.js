@@ -1,5 +1,7 @@
 import React from "react";
 
+import WorkItem from "./WorkItem";
+
 const Resume = () => (
   <div className="resume-document">
     <div className="resume-header">
@@ -36,12 +38,30 @@ const Resume = () => (
         </ul>
       </div>
     </div>
-    <hr className="resume-divider" />
     <div className="resume-intro">
-      <div className="resume-img"></div>
-      <div className="resume-bio"></div>
+      <img src="img/avatar.png" alt="Riccardo Sacco" className="resume-img" />
+      <div className="resume-bio">
+        I’ve been passionate about programming since I was 13 and I love to
+        learn. I believe in the learn-by-doing approach because I’ve always
+        learned from mistakes. <br />I love my job so much that it doesn’t feel
+        like I'm working. Sometimes I make decisions, sometimes I change my
+        mind, but everytime I get to the best solution.
+      </div>
     </div>
-    <hr className="resume-divider" />
+    <div className="resume-main">
+      <section>
+        <h3 className="resume-section-heading">Work Experiences</h3>
+        <div className="work-container">
+          <WorkItem />
+          <WorkItem />
+          <WorkItem />
+          <WorkItem />
+        </div>
+      </section>
+      <section>
+        <h3 className="resume-section-heading">Skills</h3>
+      </section>
+    </div>
   </div>
 );
 

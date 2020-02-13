@@ -8,12 +8,11 @@ export default () => (
   <section className="resume home">
     <div className="container">
       <h2>My resume</h2>
+      <p></p>
       <Resume />
-      <Button
-        href="/portfolio"
-        text="View Portfolio"
-        icon="fa fa-laptop-code"
-      />
+      <div className="resume-button">
+        <Button href="/resume" text="Download Resume" icon="fa fa-file-alt" />
+      </div>
     </div>
   </section>
 );
