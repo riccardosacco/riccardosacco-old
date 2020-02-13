@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "../../components/ui/Button";
 
-import PortfolioGrid from "../../components/Portfolio/PortfolioGrid";
+import PortfolioGrid from "../../components/Portfolio";
 
 const Portfolio = ({ portfolio }) => (
   <section className="portfolio home">

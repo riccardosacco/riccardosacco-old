@@ -31,3 +31,18 @@ h5 {
 hr {
   border-color: rgba($text-color, 0.1);
 }
+
+a {
+  color: $text-color;
+  transition: 0.5s;
+  &:hover {
+    color: rgba($text-color, 0.8);
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

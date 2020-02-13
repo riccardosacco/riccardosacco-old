@@ -1,0 +1,49 @@
+.resume-document {
+  // Variables
+  $resume-background: invert($primary-color);
+  $resume-text-color: invert($text-color);
+  $resume-text-color-alt: rgba($resume-text-color, 0.6);
+  $resume-divider-color: rgba($resume-text-color, 0.2);
+
+  padding: 3rem;
+  background-color: $resume-background;
+  color: $resume-text-color;
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    .resume-title {
+      .resume-name {
+        font-size: 2.75rem;
+        letter-spacing: 0.4rem;
+        margin-bottom: 0;
+      }
+      .resume-tagline {
+        font-size: 1.25rem;
+        color: $resume-text-color-alt;
+      }
+    }
+    .resume-contacts {
+      ul {
+        list-style: none;
+        li {
+          margin: 0.1rem 0;
+          a {
+            color: $resume-text-color;
+            display: flex;
+            align-items: center;
+            span {
+              color: $resume-text-color-alt;
+              transition: 0.5s;
+              &:hover {
+                color: $resume-text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .resume-divider {
+    border-color: $resume-divider-color;
+  }
+}
