@@ -1,11 +1,14 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+// Global variables
 @import "variables";
 
-@import "ui";
+// UI & Components
+@import "ui/index";
 
-@import "navbar";
-@import "sidebar";
-@import "home";
+// Pages
+@import "pages/home/";
+@import "pages/portfolio/";
 
+// Custom styles
 @import "custom";

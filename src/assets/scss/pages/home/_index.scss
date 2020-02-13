@@ -1,0 +1,12 @@
+.home {
+  padding: 1.5rem 3rem;
+  @include media-breakpoint-down(sm) {
+    & {
+      padding: 1rem 0;
+    }
+  }
+}
+
+@import "aboutme";
+
+@import "overview";
