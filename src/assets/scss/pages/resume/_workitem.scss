@@ -23,7 +23,12 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-
+    &.no-description {
+      cursor: initial;
+      .arrow-toggle {
+        display: none;
+      }
+    }
     .work-content {
       .work-title {
         font-family: $font-family-heading;

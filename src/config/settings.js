@@ -299,5 +299,159 @@ export default {
         description: ""
       }
     ]
+  },
+  resume: {
+    name: "Riccardo Sacco",
+    job: "Full Stack Developer",
+    contacts: [
+      {
+        value: "+39 339 1848457",
+        link: "tel:+393391848457",
+        icon: "fa fa-phone-square-alt"
+      },
+      {
+        value: "riccardo@itwebservices.it",
+        link: "mailto:riccardo@itwebservices.it",
+        icon: "fa fa-envelope-square"
+      },
+      {
+        value: "riccardosacco.com",
+        link: "https://riccardosacco.com",
+        icon: "fa fa-globe"
+      },
+      {
+        value: "Milan, Italy",
+        link: "#",
+        icon: "fa fa-map-marker-alt"
+      }
+    ],
+    avatar: "img/avatar.png",
+    bio:
+      "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes. I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
+    works: {
+      title: "Work experiences",
+      items: [
+        {
+          title: "Lead Instructor",
+          company: "Wild Code School",
+          place: "Milan, Italy",
+          icon: "wildcodeschool.png",
+          from: new Date("january 2020"),
+          to: new Date()
+        },
+        {
+          title: "Full Stack Developer",
+          company: "IT Web Services",
+          icon: "itwebservices.png",
+          description:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          from: new Date("october 2017"),
+          to: new Date()
+        },
+        {
+          title: "IT Consultant",
+          company: "IT Professional Services SAGL",
+          place: "Lugano, Switzerland",
+          icon: "itproserv.png",
+          from: new Date("june 2017"),
+          to: new Date()
+        },
+        {
+          title: "Consulente informatico",
+          company: "IT Web Group S.r.l.s",
+          icon: "itwebgroup.jpeg",
+          from: new Date("march 2018"),
+          to: new Date("october 2019")
+        },
+        {
+          title: "Responsabile e-business",
+          company: "CLASSIC Brand Milan",
+          icon: "classicbrandmilan.png",
+          from: new Date("january 2018"),
+          to: new Date("june 2019")
+        },
+        {
+          title: "Business Owner",
+          company: "HeverHosting",
+          icon: "heverhosting.png",
+          from: new Date("feb 2014"),
+          to: new Date("nov 2018")
+        }
+      ]
+    },
+    skills: {
+      title: "Skills",
+      items: [
+        {
+          topic: "Technical",
+          list: [
+            {
+              value: "HTML5",
+              icon: {
+                name: "fab fa-html5",
+                color: "#DE6E3C"
+              }
+            },
+            {
+              value: "CSS3",
+              icon: {
+                name: "fab fa-css3-alt",
+                color: "#53A7DC"
+              }
+            },
+            {
+              value: "JavaScript",
+              icon: {
+                name: "fab fa-js-square",
+                color: "#F1DE4F"
+              }
+            },
+            {
+              value: "React & React Native",
+              icon: {
+                name: "fab fa-react",
+                color: "#62D4FA"
+              }
+            },
+            {
+              value: "Node.js & Express",
+              icon: {
+                name: "fab fa-node-js",
+                color: "#3B7EEB"
+              }
+            },
+            {
+              value: "Python",
+              icon: {
+                name: "fab fa-python",
+                color: "#5769b8"
+              }
+            },
+            {
+              value: "PHP & Laravel",
+              icon: {
+                name: "fab fa-php",
+                color: "#787caf"
+              }
+            }
+          ]
+        },
+        {
+          topic: "Professional",
+          list: [
+            { value: "Project management" },
+            { value: "Business development" },
+            { value: "E-commerce" },
+            { value: "UX / UI Design" },
+            { value: "Mobile app development" },
+            { value: "Cloud computing" },
+            { value: "Big data" },
+            { value: "Machine learning" },
+            { value: "Internet of Things" },
+            { value: "3D Printing" }
+          ]
+        }
+      ]
+    }
   }
 };

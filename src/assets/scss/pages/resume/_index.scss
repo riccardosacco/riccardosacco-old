@@ -106,7 +106,8 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
   }
   .resume-main {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
     @include media-breakpoint-down(sm) {
       & {
         grid-template-columns: 1fr;
@@ -123,3 +124,5 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
 }
 
 @import "workitem";
+
+@import "skills";

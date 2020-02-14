@@ -13,37 +13,95 @@ const toggleDescription = e => {
   }
 };
 
-const WorkItem = () => (
-  <div className="work-item">
-    <img src="img/resume/wildcodeschool.png" alt="" className="work-icon" />
-    <div className="work-content-container" onClick={toggleDescription}>
-      <div className="work-content">
-        <div className="work-title">Full Stack Developer</div>
-        <div className="work-company">Wild Code School</div>
-        <div className="work-duration">
-          <span className="work-date">gen 2020 - present</span>
-          <span className="work-time">2 mesi</span>
+const isToday = someDate => {
+  const today = new Date();
+  return (
+    someDate.getDate() === today.getDate() &&
+    someDate.getMonth() === today.getMonth() &&
+    someDate.getFullYear() === today.getFullYear()
+  );
+};
+
+const dateDiff = (from, to) => {
+  const diff = Math.floor(to.getTime() - from.getTime());
+  const day = 1000 * 60 * 60 * 24;
+
+  let days = Math.floor(diff / day);
+  let years = Math.floor(days / 365);
+  let months = Math.ceil(days / 31 - years * 12);
+
+  let output = "";
+
+  if (years) {
+    output += years > 1 ? `${years} years ` : `${years} year `;
+  }
+  if (months) {
+    output += months > 1 ? `${months} months` : `${months} month`;
+  }
+
+  return output;
+};
+
+const formatDate = date => {
+  const months = [
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december"
+  ];
+  return `${months[date.getMonth()]} ${date.getFullYear()}`;
+};
+
+const formatDateString = (from, to) => {
+  let output = formatDate(from);
+  if (isToday(to)) {
+    output += " - present";
+  } else {
+    output += ` - ${formatDate(to)} `;
+  }
+  return output;
+};
+
+const WorkItem = ({ title, company, place, icon, description, from, to }) => {
+  icon = icon === "" ? "company.png" : icon;
+  const date = formatDateString(from, to);
+  const time = dateDiff(from, to);
+  return (
+    <div className="work-item">
+      <img src={`img/resume/${icon}`} alt="" className="work-icon" />
+      <div
+        className={`work-content-container${
+          description ? "" : " no-description"
+        }`}
+        onClick={toggleDescription}
+      >
+        <div className="work-content">
+          <div className="work-title">{title}</div>
+          <div className="work-company">{company}</div>
+          <div className="work-duration">
+            <span className="work-date">{date}</span>
+            <span className="work-time">{time}</span>
+          </div>
+          {place && <div className="work-place">{place}</div>}
         </div>
-        <div className="work-place">Milan, Italy</div>
-      </div>
-      <div className="work-toggle">
-        <div className="arrow-toggle">
-          <div className="bar1"></div>
-          <div className="bar2"></div>
+        <div className="work-toggle">
+          <div className="arrow-toggle">
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+          </div>
         </div>
       </div>
+      <div className="work-description">{description}</div>
     </div>
-    <div className="work-description">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-        sint ab aut nemo fuga eum expedita sed odit nulla perferendis sit unde
-        ipsam cupiditate aspernatur nobis beatae modi, hic necessitatibus atque
-        qui? Quae quidem quaerat non consequatur porro, facere consequuntur
-        maiores animi, doloremque vitae sunt iure est, amet asperiores
-        architecto?
-      </p>
-    </div>
-  </div>
-);
+  );
+};
 
 export default WorkItem;
