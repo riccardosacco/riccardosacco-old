@@ -336,7 +336,7 @@ export default {
           company: "Wild Code School",
           place: "Milan, Italy",
           icon: "wildcodeschool.png",
-          from: new Date("january 2020"),
+          from: new Date("2020-01-01"),
           to: new Date()
         },
         {
@@ -345,7 +345,7 @@ export default {
           icon: "itwebservices.png",
           description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-          from: new Date("october 2017"),
+          from: new Date("2017-10-01"),
           to: new Date()
         },
         {
@@ -353,29 +353,29 @@ export default {
           company: "IT Professional Services SAGL",
           place: "Lugano, Switzerland",
           icon: "itproserv.png",
-          from: new Date("june 2017"),
+          from: new Date("2017-6-01"),
           to: new Date()
         },
         {
           title: "Consulente informatico",
           company: "IT Web Group S.r.l.s",
           icon: "itwebgroup.jpeg",
-          from: new Date("march 2018"),
-          to: new Date("october 2019")
+          from: new Date("2018-3-01"),
+          to: new Date("2019-10-01")
         },
         {
           title: "Responsabile e-business",
           company: "CLASSIC Brand Milan",
           icon: "classicbrandmilan.png",
-          from: new Date("january 2018"),
-          to: new Date("june 2019")
+          from: new Date("2018-01-01"),
+          to: new Date("2019-06-01")
         },
         {
           title: "Business Owner",
           company: "HeverHosting",
           icon: "heverhosting.png",
-          from: new Date("feb 2014"),
-          to: new Date("nov 2018")
+          from: new Date("2014-02-01"),
+          to: new Date("2018-11-01")
         }
       ]
     },
