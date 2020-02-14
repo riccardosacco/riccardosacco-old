@@ -486,12 +486,12 @@ export default {
         },
         {
           language: "French",
-          level: "Limited Working",
+          level: "Working",
           icon: "france"
         },
         {
           language: "Spanish",
-          level: "Limited Working",
+          level: "Working",
           icon: "spain"
         }
       ]
