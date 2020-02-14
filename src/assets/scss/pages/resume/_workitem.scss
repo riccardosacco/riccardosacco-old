@@ -45,12 +45,23 @@
         font-size: 0.85rem;
       }
       .work-duration {
+        display: flex;
         color: $resume-text-color-alt;
         font-size: 0.75rem;
+        @include media-breakpoint-down(sm) {
+          & {
+            flex-direction: column;
+          }
+        }
         .work-date {
           padding-right: 0.5rem;
           margin-right: 0.5rem;
           border-right: 1px solid $resume-text-color-alt;
+          @include media-breakpoint-down(sm) {
+            & {
+              border-right: none;
+            }
+          }
         }
         .work-time {
           color: $resume-text-color;
