@@ -117,7 +117,7 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
       font-size: 1.25rem;
       text-transform: uppercase;
       padding-left: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       border-left: 4px solid $resume-text-color-alt;
       @include media-breakpoint-down(sm) {
         & {
@@ -131,3 +131,7 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
 @import "workitem";
 
 @import "skills";
+
+@import "education";
+
+@import "languages";

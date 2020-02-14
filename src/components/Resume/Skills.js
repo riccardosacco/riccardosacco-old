@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillListItem = ({ value, icon }) => (
+const SkillItem = ({ value, icon }) => (
   <li>
     {icon && <i className={`${icon.name} fa-fw`} color={icon.color}></i>}
     {value}
@@ -12,7 +12,7 @@ const SkillTopic = ({ topic, list }) => (
     <div className="skill-title">{topic}</div>
     <ul>
       {list.map((skill, index) => (
-        <SkillListItem key={index} {...skill} />
+        <SkillItem key={index} {...skill} />
       ))}
     </ul>
   </div>

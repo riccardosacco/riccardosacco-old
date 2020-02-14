@@ -414,7 +414,7 @@ export default {
               }
             },
             {
-              value: "Node.js & Express",
+              value: "Node.js",
               icon: {
                 name: "fab fa-node-js",
                 color: "#3B7EEB"
@@ -428,7 +428,7 @@ export default {
               }
             },
             {
-              value: "PHP & Laravel",
+              value: "PHP",
               icon: {
                 name: "fab fa-php",
                 color: "#787caf"
@@ -442,7 +442,6 @@ export default {
             { value: "Project management" },
             { value: "Business development" },
             { value: "E-commerce" },
-            { value: "UX / UI Design" },
             { value: "Mobile app development" },
             { value: "Cloud computing" },
             { value: "Big data" },
@@ -450,6 +449,50 @@ export default {
             { value: "Internet of Things" },
             { value: "3D Printing" }
           ]
+        }
+      ]
+    },
+    education: {
+      title: "Education",
+      items: [
+        {
+          school: "Politecnico di Milano",
+          title: "Ingegneria Informatica",
+          icon: "polimi.png",
+          from: 2019,
+          to: 2022
+        },
+        {
+          school: "Istituto Maria Ausiliatrice",
+          title: "Diploma Liceo Scientifico",
+          icon: "maria-ausiliatrice.png",
+          from: 2012,
+          to: 2017
+        }
+      ]
+    },
+    languages: {
+      title: "Languages",
+      items: [
+        {
+          language: "Italian",
+          level: "Native",
+          icon: "italy"
+        },
+        {
+          language: "English",
+          level: "Professional",
+          icon: "united-kingdom"
+        },
+        {
+          language: "French",
+          level: "Limited Working",
+          icon: "france"
+        },
+        {
+          language: "Spanish",
+          level: "Limited Working",
+          icon: "spain"
         }
       ]
     }

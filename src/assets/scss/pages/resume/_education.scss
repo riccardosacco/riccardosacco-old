@@ -1,0 +1,25 @@
+.education {
+  .education-container {
+    .education-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      img {
+        max-width: 2.5rem;
+      }
+      .education-title {
+        font-family: $font-family-heading;
+        font-size: 0.85rem;
+      }
+      .education-school {
+        font-size: 0.75rem;
+        color: $resume-text-color-alt;
+      }
+      .education-date {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

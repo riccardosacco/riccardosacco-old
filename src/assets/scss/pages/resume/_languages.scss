@@ -1,0 +1,24 @@
+.languages {
+  .languages-container {
+    .language-item {
+      display: flex;
+      margin-bottom: 0.5rem;
+      img {
+        max-width: 1rem;
+        margin-right: 0.25rem;
+      }
+      .language-details {
+        display: flex;
+        align-items: center;
+        .language-name {
+          font-size: 0.75rem;
+          margin-right: 0.25rem;
+        }
+        .language-level {
+          font-size: 0.75rem;
+          color: $resume-text-color-alt;
+        }
+      }
+    }
+  }
+}
