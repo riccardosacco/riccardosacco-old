@@ -1,10 +1,13 @@
 .languages {
   .languages-container {
+    display: flex;
+    flex-direction: column;
     .language-item {
-      display: flex;
+      display: grid;
+      grid-template-columns: auto 1fr;
       margin-bottom: 0.5rem;
       img {
-        max-width: 1rem;
+        width: 1rem;
         margin-right: 0.25rem;
       }
       .language-details {
