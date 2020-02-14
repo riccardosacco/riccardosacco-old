@@ -353,7 +353,7 @@ export default {
           company: "IT Professional Services SAGL",
           place: "Lugano, Switzerland",
           icon: "itproserv.png",
-          from: new Date("2017-6-01"),
+          from: new Date("2017-06-01"),
           to: new Date()
         },
         {
