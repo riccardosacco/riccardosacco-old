@@ -70,10 +70,19 @@ const formatDateString = (from, to) => {
   return output;
 };
 
-const WorkItem = ({ title, company, place, icon, description, from, to }) => {
+const WorkItem = ({
+  title,
+  subtitle,
+  company,
+  place,
+  icon,
+  description,
+  from,
+  to
+}) => {
   icon = icon === "" ? "company.png" : icon;
-  const date = formatDateString(from, to);
-  const time = dateDiff(from, to);
+  const date = from && to && formatDateString(from, to);
+  const time = from && to && dateDiff(from, to);
   return (
     <div className="work-item">
       <img src={`img/resume/${icon}`} alt="" className="work-icon" />
@@ -85,11 +94,14 @@ const WorkItem = ({ title, company, place, icon, description, from, to }) => {
       >
         <div className="work-content">
           <div className="work-title">{title}</div>
-          <div className="work-company">{company}</div>
-          <div className="work-duration">
-            <span className="work-date">{date}</span>
-            <span className="work-time">{time}</span>
-          </div>
+          {company && <div className="work-company">{company}</div>}
+          {subtitle && <div className="work-subtitle">{subtitle}</div>}
+          {from && to && (
+            <div className="work-duration">
+              <span className="work-date">{date}</span>
+              <span className="work-time">{time}</span>
+            </div>
+          )}
           {place && <div className="work-place">{place}</div>}
         </div>
         <div className="work-toggle">

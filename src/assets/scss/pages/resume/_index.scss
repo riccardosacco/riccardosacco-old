@@ -23,6 +23,7 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
   .resume-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
     @include media-breakpoint-down(sm) {
       & {
         flex-direction: column;
@@ -83,7 +84,6 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
     grid-gap: 1.5rem;
     align-items: center;
     padding: 1rem 0;
-    margin: 1rem 0;
     border-top: 1px solid $resume-divider-color;
     border-bottom: 1px solid $resume-divider-color;
     @include media-breakpoint-down(sm) {
@@ -107,7 +107,7 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
   .resume-main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     @include media-breakpoint-down(sm) {
       & {
         grid-template-columns: 1fr;
@@ -117,7 +117,8 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
       font-size: 1.25rem;
       text-transform: uppercase;
       padding-left: 1rem;
-      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      margin-bottom: 0.75rem;
       border-left: 4px solid $resume-text-color-alt;
       @include media-breakpoint-down(sm) {
         & {
@@ -135,3 +136,5 @@ $resume-divider-color: rgba($resume-text-color, 0.2);
 @import "education";
 
 @import "languages";
+
+@import "interests";

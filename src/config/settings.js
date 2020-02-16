@@ -31,6 +31,18 @@ export default {
         "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)"
     }
   ],
+  contacts: [
+    {
+      value: "+39 339 1848457",
+      link: "tel:+393391848457",
+      icon: "fa fa-phone-square-alt"
+    },
+    {
+      value: "riccardo@itwebservices.it",
+      link: "mailto:riccardo@itwebservices.it",
+      icon: "fa fa-envelope-square"
+    }
+  ],
   navigation: [
     {
       path: "/",
@@ -49,12 +61,6 @@ export default {
       icon: "fa fa-file-alt",
       label: "Resume",
       component: "Resume"
-    },
-    {
-      path: "/blog",
-      icon: "fa fa-blog",
-      label: "Blog",
-      component: "Blog"
     },
     {
       path: "/contact",
@@ -493,6 +499,41 @@ export default {
           language: "Spanish",
           level: "Working",
           icon: "spain"
+        }
+      ]
+    },
+    interests: {
+      title: "Interests",
+      items: [
+        { value: "Motorcycle" },
+        { value: "Drone Photography" },
+        { value: "Electronics" },
+        { value: "Traveling" },
+        { value: "Gym" }
+      ]
+    },
+    projects: {
+      title: "Projects",
+      items: [
+        {
+          title: "Loyable",
+          icon: "loyable.png",
+          company: "Digital Loyalty Platform"
+        },
+        {
+          title: "ECOLab",
+          icon: "",
+          company: "Virtualization of computers in schools"
+        },
+        {
+          title: "Smart City",
+          icon: "",
+          company: "Reduce traffic by connecting traffic lights to Google Maps"
+        },
+        {
+          title: "TripExchange",
+          icon: "",
+          company: "Transport exchange platform"
         }
       ]
     }

@@ -1,4 +1,7 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
@@ -19,12 +22,6 @@
   }
   .name {
     font-size: 1.5rem;
-    display: none;
-    @include media-breakpoint-down(md) {
-      & {
-        display: block;
-      }
-    }
   }
   .avatar {
     max-width: 160px;
@@ -72,6 +69,26 @@
       }
       &.active {
         color: $text-color;
+      }
+    }
+  }
+
+  .contacts {
+    ul {
+      li {
+        margin-bottom: 0.5rem;
+        text-align: left;
+        a {
+          display: flex;
+          align-items: center;
+          span {
+            color: rgba($text-color, 0.6);
+            transition: 0.5s;
+            &:hover {
+              color: $text-color;
+            }
+          }
+        }
       }
     }
   }
