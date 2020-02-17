@@ -4,7 +4,7 @@ import Button from "../../components/ui/Button";
 
 import Resume from "../../components/Resume";
 
-const download = () => {
+const print = () => {
   window.print();
 };
 
@@ -19,7 +19,7 @@ export default props => (
           // href="/resume"
           text="Download Resume"
           icon="fa fa-file-alt"
-          onClick={download}
+          onClick={print}
         />
       </div>
     </div>

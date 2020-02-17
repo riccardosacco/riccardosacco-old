@@ -532,11 +532,6 @@ export default {
           icon: "3dprinting.png",
           subtitle:
             "I've opened a 3D Printing laboratory in Milan, funded by ACLI, where we do courses for children"
-        },
-        {
-          title: "TripExchange",
-          icon: "tripexchange.png",
-          subtitle: "Transport exchange platform for individual carriers"
         }
       ]
     }
