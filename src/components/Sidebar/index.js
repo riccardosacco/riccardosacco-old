@@ -1,6 +1,6 @@
 import React from "react";
 
-import Social from "./Social";
+import Social from "../../components/ui/Social";
 import Nav from "./Nav";
 import Contacts from "./Contacts";
 

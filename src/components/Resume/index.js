@@ -7,8 +7,9 @@ import Education from "./Education";
 import Languages from "./Languages";
 import Interests from "./Interests";
 import Projects from "./Projects";
+import Social from "../../components/ui/Social";
 
-const Resume = resume => (
+const Resume = ({ resume, social }) => (
   <div id="resume" className="resume-document">
     <Heading {...resume} />
     <div className="resume-main">
@@ -23,6 +24,7 @@ const Resume = resume => (
         <Interests {...resume.interests} />
       </section>
     </div>
+    <Social social={social} center />
   </div>
 );
 

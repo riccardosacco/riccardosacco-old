@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  &.center {
+    justify-content: center;
+    a {
+      margin: 0 0.5rem;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $secondary-color;
+    transition: 0.5s opacity;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

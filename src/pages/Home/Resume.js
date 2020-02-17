@@ -4,14 +4,23 @@ import Button from "../../components/ui/Button";
 
 import Resume from "../../components/Resume";
 
-export default ({ resume }) => (
+const download = () => {
+  window.print();
+};
+
+export default props => (
   <section className="resume home">
     <div className="container">
       <h2>My resume</h2>
       <p></p>
-      <Resume {...resume} />
+      <Resume {...props} />
       <div className="resume-button">
-        <Button href="/resume" text="Download Resume" icon="fa fa-file-alt" />
+        <Button
+          // href="/resume"
+          text="Download Resume"
+          icon="fa fa-file-alt"
+          onClick={download}
+        />
       </div>
     </div>
   </section>

@@ -327,7 +327,8 @@ export default {
       },
       {
         value: "Milan, Italy",
-        link: "#",
+        link:
+          "https://www.google.it/maps/place/IT+Web+Services/@45.4265459,9.2003332,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c45b08e126cb:0x29944543e6792cb7!8m2!3d45.4265459!4d9.2025219",
         icon: "fa fa-map-marker-alt"
       }
     ],
@@ -349,8 +350,6 @@ export default {
           title: "Full Stack Developer",
           company: "IT Web Services",
           icon: "itwebservices.png",
-          description:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
           from: new Date("2017-10-01"),
           to: new Date()
         },
@@ -505,11 +504,12 @@ export default {
     interests: {
       title: "Interests",
       items: [
-        { value: "Motorcycle" },
-        { value: "Drone Photography" },
-        { value: "Electronics" },
         { value: "Traveling" },
-        { value: "Gym" }
+        { value: "Fitness" },
+        { value: "Adventure" },
+        { value: "Motorcycle" },
+        { value: "Skiing" },
+        { value: "Drone Photography" }
       ]
     },
     projects: {
@@ -518,22 +518,25 @@ export default {
         {
           title: "Loyable",
           icon: "loyable.png",
-          company: "Digital Loyalty Platform"
+          subtitle:
+            "Digital loyalty platform for businesses to do stamp-driven promotions"
         },
         {
           title: "ECOLab",
-          icon: "",
-          company: "Virtualization of computers in schools"
+          icon: "ecolab.png",
+          subtitle:
+            "Virtualization of computers in school laboratories, to save energy and be self-sustained with solar panels"
         },
         {
-          title: "Smart City",
-          icon: "",
-          company: "Reduce traffic by connecting traffic lights to Google Maps"
+          title: "3D Printing Laboratory",
+          icon: "3dprinting.png",
+          subtitle:
+            "I've opened a 3D Printing laboratory in Milan, funded by ACLI, where we do courses for children"
         },
         {
           title: "TripExchange",
-          icon: "",
-          company: "Transport exchange platform"
+          icon: "tripexchange.png",
+          subtitle: "Transport exchange platform for individual carriers"
         }
       ]
     }

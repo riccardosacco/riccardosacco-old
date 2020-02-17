@@ -1,7 +1,7 @@
 import React from "react";
 
-export default ({ social }) => (
-  <div className="social">
+const Social = ({ social, center = false }) => (
+  <div className={`social${center ? " center" : ""}`}>
     {social.map(item => (
       <a
         key={item.name}
@@ -15,3 +15,5 @@ export default ({ social }) => (
     ))}
   </div>
 );
+
+export default Social;

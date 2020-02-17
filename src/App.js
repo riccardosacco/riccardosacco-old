@@ -16,7 +16,9 @@ export default () => (
         <Route
           exact
           path="/"
-          render={props => <Home {...props} {...settings} />}
+          render={props => (
+            <Home {...props} {...settings} title={`Home - ${settings.name}`} />
+          )}
         />
       </Switch>
     </div>
