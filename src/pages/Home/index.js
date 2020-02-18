@@ -13,10 +13,10 @@ const Home = props => {
 
   return (
     <>
-      <AboutMe {...props} />
-      <Overview {...props} />
-      <Portfolio {...props} />
-      <Resume {...props} />
+      <AboutMe />
+      <Overview />
+      <Portfolio />
+      <Resume />
     </>
   );
 };

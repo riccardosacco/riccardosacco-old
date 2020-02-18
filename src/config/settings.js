@@ -1,6 +1,6 @@
 export default {
   name: "Riccardo Sacco",
-  avatar: "img/avatar.png",
+  avatar: "/img/avatar.png",
   bio:
     "Hi, my name is Riccardo Sacco and I'm a full stack developer. Welcome to my website!",
   job: "Full Stack Developer",
@@ -307,6 +307,7 @@ export default {
     ]
   },
   resume: {
+    title: "My resume",
     name: "Riccardo Sacco",
     job: "Full Stack Developer",
     contacts: [

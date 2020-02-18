@@ -1,21 +1,42 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Social from "../../components/ui/Social";
 import Nav from "./Nav";
 import Contacts from "./Contacts";
 
-const Sidebar = ({ name, avatar, bio, social, contacts, navigation }) => {
+import Context from "../../context";
+
+const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <div>
-        <h2 className="name">{name}</h2>
-        <img className="avatar" src={avatar} alt={name} />
-        <p className="bio">{bio}</p>
-        <Social social={social} />
-        <Nav navItems={navigation} />
-      </div>
-      <Contacts contacts={contacts} />
-    </div>
+    <Context.Consumer>
+      {context => {
+        const {
+          name,
+          avatar,
+          bio,
+          social,
+          navigation,
+          contacts
+        } = context.settings;
+        return (
+          <>
+            <div className="sidebar">
+              <div>
+                <Link to="/">
+                  <h2 className="name">{name}</h2>
+                </Link>
+                <img className="avatar" src={avatar} alt={name} />
+                <p className="bio">{bio}</p>
+                <Social social={social} />
+                <Nav navItems={navigation} />
+              </div>
+              <Contacts contacts={contacts} />
+            </div>
+          </>
+        );
+      }}
+    </Context.Consumer>
   );
 };
 

@@ -1,27 +1,34 @@
 import React from "react";
 
+import Context from "../../context";
+
 import Button from "../../components/ui/Button";
 
-import Resume from "../../components/Resume";
+import ResumeItem from "../../components/Resume";
 
-const print = selector => {
-  window.print();
-};
-
-export default props => (
-  <section className="resume home">
-    <div className="container">
-      <h2>My resume</h2>
-      <p></p>
-      <Resume {...props} />
-      <div className="resume-button">
-        <Button
-          // href="/resume"
-          text="Download Resume"
-          icon="fa fa-file-alt"
-          onClick={print}
-        />
-      </div>
-    </div>
-  </section>
+const Resume = () => (
+  <Context.Consumer>
+    {context => {
+      const { settings } = context;
+      return (
+        <section className="resume home">
+          <div className="container">
+            <h2>{settings.resume.title}</h2>
+            <p></p>
+            <ResumeItem {...settings} />
+            <div className="resume-button">
+              <Button
+                // href="/resume"
+                text="Download Resume"
+                icon="fa fa-file-alt"
+                onClick={window.print}
+              />
+            </div>
+          </div>
+        </section>
+      );
+    }}
+  </Context.Consumer>
 );
+
+export default Resume;

@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 
 import Context from "../../context";
 
-import ResumeItem from "../../components/Resume";
+import PortfolioGrid from "../../components/Portfolio";
 
-const Resume = title => {
+const Portfolio = title => {
   //Change document title
   useEffect(() => {
     document.title = title;
@@ -13,12 +13,12 @@ const Resume = title => {
   return (
     <Context.Consumer>
       {context => {
-        const { settings } = context;
+        const { portfolio } = context.settings;
         return (
-          <div className="resume">
+          <div className="portfolio">
             <div className="container">
-              <h2>{settings.resume.title}</h2>
-              <ResumeItem {...settings} />
+              <h2>{portfolio.title}</h2>
+              <PortfolioGrid portfolio={portfolio.projects} />
             </div>
           </div>
         );
@@ -27,4 +27,4 @@ const Resume = title => {
   );
 };
 
-export default Resume;
+export default Portfolio;
