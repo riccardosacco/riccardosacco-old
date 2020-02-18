@@ -308,7 +308,7 @@ export default {
   },
   resume: {
     title: "My resume",
-    name: "Riccardo Sacco",
+    name: "Riccardo Secco",
     job: "Full Stack Developer",
     contacts: [
       {
@@ -370,7 +370,7 @@ export default {
           to: new Date("2019-10-01")
         },
         {
-          title: "E-business manager",
+          title: "E-commerce Manager",
           company: "CLASSIC Brand Milan",
           icon: "classicbrandmilan.png",
           from: new Date("2018-01-01"),
@@ -520,7 +520,7 @@ export default {
           title: "Loyable",
           icon: "loyable.png",
           subtitle:
-            "Digital loyalty platform for businesses to do stamp-driven promotions"
+            "Digital loyalty platform for businesses to simplify stamp-driven promotions"
         },
         {
           title: "ECOLab",
@@ -532,7 +532,7 @@ export default {
           title: "3D Printing Laboratory",
           icon: "3dprinting.png",
           subtitle:
-            "I've opened a 3D Printing laboratory in Milan, funded by ACLI, where we do courses for children"
+            "3D Printing laboratory in Milan, funded by ACLI, where we do courses for children & students"
         }
       ]
     }

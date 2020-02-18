@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import Overview from "./Overview";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
+import Contact from "./Contact";
 
 const Home = props => {
   //Change document title
@@ -17,6 +18,7 @@ const Home = props => {
       <Overview />
       <Portfolio />
       <Resume />
+      <Contact />
     </>
   );
 };

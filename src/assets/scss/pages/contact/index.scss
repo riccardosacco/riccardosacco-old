@@ -1,0 +1,11 @@
+.contact {
+  .contact-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .contact-details {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@import "contactform";
