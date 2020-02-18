@@ -4,7 +4,7 @@ import Button from "../../components/ui/Button";
 
 import Resume from "../../components/Resume";
 
-const print = () => {
+const print = selector => {
   window.print();
 };
 

@@ -362,14 +362,14 @@ export default {
           to: new Date()
         },
         {
-          title: "Consulente informatico",
+          title: "IT Manager",
           company: "IT Web Group S.r.l.s",
           icon: "itwebgroup.jpeg",
           from: new Date("2018-03-01"),
           to: new Date("2019-10-01")
         },
         {
-          title: "Responsabile e-business",
+          title: "E-business manager",
           company: "CLASSIC Brand Milan",
           icon: "classicbrandmilan.png",
           from: new Date("2018-01-01"),
