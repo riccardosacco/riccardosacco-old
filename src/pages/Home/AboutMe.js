@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
 import Button from "../../components/ui/Button";
@@ -14,9 +14,7 @@ const AboutMe = () => (
           <div className="container">
             <h1 className="name">{name}</h1>
             <h2 className="tagline">{job}</h2>
-            <div className="description">
-              { ReactHtmlParser(description) }
-            </div>
+            <div className="description">{ReactHtmlParser(description)}</div>
             <Button
               text="Portfolio"
               icon="fa fa-laptop-code"

@@ -4,7 +4,8 @@ export default {
   bio:
     "Hi, my name is Riccardo Sacco and I'm a full stack developer. Welcome to my website!",
   job: "Full Stack Developer",
-  description: "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes.<br/> I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
+  description:
+    "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes.<br/> I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
   social: [
     {
       name: "facebook",
@@ -305,7 +306,7 @@ export default {
   },
   resume: {
     title: "My resume",
-    name: "Riccardo Secco",
+    name: "Riccardo Sacco",
     job: "Full Stack Developer",
     contacts: [
       {
@@ -332,7 +333,7 @@ export default {
     ],
     avatar: "img/avatar.png",
     bio:
-      "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes. I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
+      "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes. <br/>I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
     works: {
       title: "Work experiences",
       items: [
@@ -537,7 +538,7 @@ export default {
   contact: {
     title: "Contact me",
     subtitle:
-      "Interested in hiring me for your project or just want to say hi? <br/>You can fill in the contact form below or send me an email."
+      "Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email."
   },
   businessCard: {
     header: {

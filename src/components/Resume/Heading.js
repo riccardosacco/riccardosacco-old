@@ -1,5 +1,7 @@
 import React from "react";
 
+import ReactHtmlParser from "react-html-parser";
+
 const ResumeContactItem = ({ value, link, icon }) => (
   <li>
     <a href={link} target="_blank" rel="noopener noreferrer">
@@ -26,7 +28,7 @@ const Heading = ({ name, job, contacts, avatar, bio }) => (
     </div>
     <div className="resume-intro">
       {avatar && <img src={avatar} alt={name} className="resume-img" />}
-      {bio && <div className="resume-bio">{bio}</div>}
+      {bio && <div className="resume-bio">{ReactHtmlParser(bio)}</div>}
     </div>
   </>
 );
