@@ -59,11 +59,7 @@ export default () => (
           <Route
             path="/contact"
             render={props => (
-              <Contact
-                {...props}
-                {...settings}
-                title={`Contact - ${settings.name}`}
-              />
+              <Contact {...props} title={`Contact - ${settings.name}`} />
             )}
           />
         </Switch>

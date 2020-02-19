@@ -52,7 +52,12 @@
   .contacts {
     .contact-item {
       font-size: 0.75em;
-      color: $text-color-alt;
+      a {
+        color: $text-color-alt;
+        &:hover {
+          color: rgba($text-color, 0.8);
+        }
+      }
       b {
         color: $text-color;
         font-family: $font-family-heading;
@@ -81,17 +86,24 @@
       position: absolute;
       bottom: $padding-card;
       right: $padding-card;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      span {
-        font-size: 0.4em;
-        color: $text-color-alt;
-        margin-bottom: 0.1em;
-      }
-      svg {
-        max-width: 3em;
-        max-height: 3em;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          font-size: 0.4em;
+          color: $text-color-alt;
+          transition: 0.5s;
+        }
+        svg {
+          max-width: 3em;
+          max-height: 3em;
+        }
+        &:hover {
+          span {
+            color: rgba($text-color, 0.8);
+          }
+        }
       }
     }
   }

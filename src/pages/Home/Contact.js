@@ -4,7 +4,6 @@ import ReactHtmlParser from "react-html-parser";
 import Context from "../../context";
 
 import ContactForm from "../../components/Contact/ContactForm";
-
 import BusinessCard from "../../components/BusinessCard";
 
 const Contact = () => (

@@ -1,17 +1,37 @@
 import React, { useEffect } from "react";
+import ReactHtmlParser from "react-html-parser";
 
-const Contact = (settings, title) => {
+import Context from "../../context";
+
+import ContactForm from "../../components/Contact/ContactForm";
+import BusinessCard from "../../components/BusinessCard";
+
+const Contact = ({ title }) => {
   //Change document title
   useEffect(() => {
     document.title = title;
   });
 
   return (
-    <div className="contact">
-      <div className="container">
-        <h2>Contact me</h2>
-      </div>
-    </div>
+    <Context.Consumer>
+      {context => {
+        const { contact, businessCard } = context.settings;
+        return (
+          <div className="contact page">
+            <div className="container">
+              <h2>{contact.title}</h2>
+              <p>{ReactHtmlParser(contact.subtitle)}</p>
+              <div className="contact-row">
+                <ContactForm />
+                <div className="contact-details">
+                  <BusinessCard {...businessCard} />
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }}
+    </Context.Consumer>
   );
 };
 

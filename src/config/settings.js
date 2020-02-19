@@ -340,6 +340,7 @@ export default {
         {
           title: "Lead Instructor",
           company: "Wild Code School",
+          link: "https://wildcodeschool.com",
           place: "Milan, Italy",
           icon: "wildcodeschool.png",
           from: new Date("2020-01-01"),
@@ -348,6 +349,7 @@ export default {
         {
           title: "Full Stack Developer",
           company: "IT Web Services",
+          link: "https://itwebservices.it",
           icon: "itwebservices.png",
           from: new Date("2017-10-01"),
           to: new Date()
@@ -355,6 +357,7 @@ export default {
         {
           title: "IT Consultant",
           company: "IT Professional Services SAGL",
+          link: "http://www.itproserv.net",
           place: "Lugano, Switzerland",
           icon: "itproserv.png",
           from: new Date("2017-06-01"),
@@ -363,6 +366,7 @@ export default {
         {
           title: "IT Manager",
           company: "IT Web Group S.r.l.s",
+          link: "https://itwebgroup.org",
           icon: "itwebgroup.jpeg",
           from: new Date("2018-03-01"),
           to: new Date("2019-10-01")
@@ -549,11 +553,13 @@ export default {
     contacts: [
       {
         key: "Mobile:",
-        value: "+39 3391848457"
+        value: "+39 3391848457",
+        link: "tel:+393391848457"
       },
       {
         key: "Email:",
-        value: "riccardo@itwebservices.it"
+        value: "riccardo@itwebservices.it",
+        link: "mailto:riccardo@itwebservices.it"
       }
     ],
     footer: {

@@ -15,7 +15,7 @@ const Resume = title => {
       {context => {
         const { settings } = context;
         return (
-          <div className="resume">
+          <div className="resume page">
             <div className="container">
               <h2>{settings.resume.title}</h2>
               <ResumeItem {...settings} />

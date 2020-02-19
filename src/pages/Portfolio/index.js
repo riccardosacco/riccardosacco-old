@@ -15,7 +15,7 @@ const Portfolio = title => {
       {context => {
         const { portfolio } = context.settings;
         return (
-          <div className="portfolio">
+          <div className="portfolio page">
             <div className="container">
               <h2>{portfolio.title}</h2>
               <PortfolioGrid portfolio={portfolio.projects} />

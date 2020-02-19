@@ -74,6 +74,7 @@ const WorkItem = ({
   title,
   subtitle,
   company,
+  link,
   place,
   icon,
   description,
@@ -85,7 +86,9 @@ const WorkItem = ({
   const time = from && to && dateDiff(from, to);
   return (
     <div className="work-item">
-      <img src={`img/resume/${icon}`} alt="" className="work-icon" />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img src={`img/resume/${icon}`} alt="" className="work-icon" />
+      </a>
       <div
         className={`work-content-container${
           description ? "" : " no-description"

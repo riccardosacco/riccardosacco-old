@@ -5,6 +5,7 @@ import Overview from "./Overview";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import Copyright from "./Copyright";
 
 const Home = props => {
   //Change document title
@@ -19,6 +20,7 @@ const Home = props => {
       <Portfolio />
       <Resume />
       <Contact />
+      <Copyright />
     </>
   );
 };

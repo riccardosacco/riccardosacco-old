@@ -11,7 +11,9 @@ const BusinessCard = ({ header, contacts, footer }) => (
         <div className="profession">{header.profession}</div>
       </div>
       <div className="logo">
-        <img src={header.logo} alt="" />
+        <a href={footer.website} target="_blank" rel="noopener noreferrer">
+          <img src={header.logo} alt="" />
+        </a>
       </div>
     </div>
     <div className="divider"></div>
@@ -19,7 +21,7 @@ const BusinessCard = ({ header, contacts, footer }) => (
       {contacts.map((contact, index) => (
         <div className="contact-item" key={index}>
           <b>{contact.key}</b>
-          {contact.value}
+          <a href={contact.link}>{contact.value}</a>
         </div>
       ))}
     </div>
@@ -30,8 +32,10 @@ const BusinessCard = ({ header, contacts, footer }) => (
         <div className="address">{ReactHtmlParser(footer.address)}</div>
       </div>
       <div className="qrcode">
-        <span>{footer.alias}</span>
-        <QRCode value={footer.website} renderAs="svg" level="L" />
+        <a href={footer.website} target="_blank" rel="noopener noreferrer">
+          <span>{footer.alias}</span>
+          <QRCode value={footer.website} renderAs="svg" level="L" />
+        </a>
       </div>
     </div>
   </div>
