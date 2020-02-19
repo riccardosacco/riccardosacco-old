@@ -9,9 +9,14 @@
   border-radius: 0.25rem;
   transition: 0.5s background-color;
   border: 1px solid #fff;
+  cursor: pointer;
   &:hover {
     background: invert($primary-color);
     color: invert($text-color);
     text-decoration: none;
+  }
+
+  &.button-block {
+    width: 100%;
   }
 }

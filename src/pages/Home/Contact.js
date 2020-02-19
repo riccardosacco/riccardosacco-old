@@ -1,22 +1,25 @@
 import React from "react";
+import ReactHtmlParser from "react-html-parser";
 
 import Context from "../../context";
 
 import ContactForm from "../../components/Contact/ContactForm";
 
+import BusinessCard from "../../components/BusinessCard";
+
 const Contact = () => (
   <Context.Consumer>
     {context => {
-      const { settings } = context;
+      const { contact, businessCard } = context.settings;
       return (
         <section className="contact home">
           <div className="container">
-            <h2>Contact me</h2>
-            <p></p>
+            <h2>{contact.title}</h2>
+            <p>{ReactHtmlParser(contact.subtitle)}</p>
             <div className="contact-row">
               <ContactForm />
               <div className="contact-details">
-                <div className="email">riccardo@itwebservices.it</div>
+                <BusinessCard {...businessCard} />
               </div>
             </div>
           </div>

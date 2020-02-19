@@ -4,10 +4,7 @@ export default {
   bio:
     "Hi, my name is Riccardo Sacco and I'm a full stack developer. Welcome to my website!",
   job: "Full Stack Developer",
-  description: [
-    "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes.",
-    "I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution."
-  ],
+  description: "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes.<br/> I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
   social: [
     {
       name: "facebook",
@@ -535,6 +532,34 @@ export default {
             "3D Printing laboratory in Milan, funded by ACLI, where we do courses for children & students"
         }
       ]
+    }
+  },
+  contact: {
+    title: "Contact me",
+    subtitle:
+      "Interested in hiring me for your project or just want to say hi? <br/>You can fill in the contact form below or send me an email."
+  },
+  businessCard: {
+    header: {
+      name: "Riccardo Sacco",
+      profession: "IT Consultant",
+      logo: "/img/itwebservices.svg"
+    },
+    contacts: [
+      {
+        key: "Mobile:",
+        value: "+39 3391848457"
+      },
+      {
+        key: "Email:",
+        value: "riccardo@itwebservices.it"
+      }
+    ],
+    footer: {
+      company: "IT Web Services",
+      address: "Via Gastone Da Foix 2,<br/>20141 Milano",
+      website: "https://itwebservices.it",
+      alias: "itwebservices.it"
     }
   }
 };

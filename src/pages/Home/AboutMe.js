@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import ReactHtmlParser from "react-html-parser";
+
 import Button from "../../components/ui/Button";
 
 import Context from "../../context";
@@ -13,12 +15,7 @@ const AboutMe = () => (
             <h1 className="name">{name}</h1>
             <h2 className="tagline">{job}</h2>
             <div className="description">
-              {description.map((text, index) => (
-                <Fragment key={index}>
-                  {text}
-                  <br />
-                </Fragment>
-              ))}
+              { ReactHtmlParser(description) }
             </div>
             <Button
               text="Portfolio"
