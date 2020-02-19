@@ -4,7 +4,7 @@ import Context from "../../context";
 
 import PortfolioGrid from "../../components/Portfolio";
 
-const Portfolio = title => {
+const Portfolio = ({ title }) => {
   //Change document title
   useEffect(() => {
     document.title = title;
