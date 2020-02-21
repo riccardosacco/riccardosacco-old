@@ -30,18 +30,12 @@
       padding: 1rem 1.5rem;
       font-size: 100%;
 
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         & {
-          font-size: 80%;
+          flex-direction: column;
         }
       }
 
-      @include media-breakpoint-down(lg) {
-        & {
-          padding: 1rem;
-          font-size: 90%;
-        }
-      }
       .title {
         font-family: $font-family-heading;
         font-size: 2em;
@@ -67,6 +61,12 @@
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
+
+        @include media-breakpoint-down(md) {
+          & {
+            margin-top: 1rem;
+          }
+        }
         .technology {
           .name {
             font-size: 1.25em;
