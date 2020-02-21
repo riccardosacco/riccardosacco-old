@@ -13,8 +13,6 @@
     }
   }
   .project-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: lighten($primary-color, 6);
     border-radius: 1rem;
     overflow: hidden;
@@ -28,9 +26,8 @@
 
     .project-details {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      padding: 1.5rem;
+      padding: 1rem 1.5rem;
       font-size: 100%;
 
       @include media-breakpoint-down(lg) {
@@ -51,9 +48,9 @@
       }
       .subtitle {
         color: rgba($text-color, 0.6);
+        margin-bottom: 1rem;
       }
       .project-meta {
-        margin: 1rem 0;
         .client,
         .website {
           font-size: 1.25em;
@@ -67,7 +64,8 @@
       }
       .technologies {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
         flex-wrap: wrap;
         .technology {
           .name {
@@ -91,6 +89,6 @@
     }
   }
   .project-description {
-    padding: 1rem;
+    padding: 1rem 0;
   }
 }

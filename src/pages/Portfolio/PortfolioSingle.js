@@ -1,8 +1,8 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext } from "react";
 
 import { Link } from "react-router-dom";
 
-import { Carousel, Modal } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 
 import ReactHtmlParser from "react-html-parser";
 
@@ -20,26 +20,8 @@ const PortfolioSingle = props => {
     document.title = `${project.title} - ${name}`;
   });
 
-  const [modal, setModal] = useState(false);
-
   return (
     <div className="portfolio page">
-      <Modal size="lg" show={modal} onHide={() => setModal(false)}>
-        <Modal.Body>
-          <Carousel>
-            {project.screenshots.map((screenshot, index) => (
-              <Carousel.Item>
-                <img
-                  className="portfolio-image d-block w-100"
-                  src={`/img/portfolio/${screenshot}`}
-                  alt={screenshot}
-                  key={index}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Modal.Body>
-      </Modal>
       {/* <div
         id="portfolio-modal"
         className="portfolio-modal"
@@ -60,11 +42,9 @@ const PortfolioSingle = props => {
           </div>
           <div className="project-info">
             <div className="project-details">
-              <div>
+              <div className="project-meta">
                 <div className="title">{project.title}</div>
                 <div className="subtitle">{project.subtitle}</div>
-              </div>
-              <div className="project-meta">
                 {project.client && (
                   <div className="client">
                     <b>Client: </b>
@@ -97,13 +77,18 @@ const PortfolioSingle = props => {
                 </div>
               )}
             </div>
-            <div
-              className="project-image"
-              style={{
-                backgroundImage: `url("/img/portfolio/${project.screenshots[0]}")`
-              }}
-              onClick={() => setModal(true)}
-            ></div>
+            <Carousel>
+              {project.screenshots.map((screenshot, index) => (
+                <Carousel.Item>
+                  <img
+                    className="portfolio-image d-block w-100"
+                    src={`/img/portfolio/${screenshot}`}
+                    alt={screenshot}
+                    key={index}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </div>
           {project.description !== "" && (
             <div className="project-description">
