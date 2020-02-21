@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 
 import Context from "../../context";
 
@@ -10,20 +10,15 @@ const Resume = title => {
     document.title = title;
   });
 
+  const { settings } = useContext(Context);
+
   return (
-    <Context.Consumer>
-      {context => {
-        const { settings } = context;
-        return (
-          <div className="resume page">
-            <div className="container">
-              <h2>{settings.resume.title}</h2>
-              <ResumeItem {...settings} />
-            </div>
-          </div>
-        );
-      }}
-    </Context.Consumer>
+    <div className="resume page">
+      <div className="container">
+        <h2>{settings.resume.title}</h2>
+        <ResumeItem {...settings} />
+      </div>
+    </div>
   );
 };
 

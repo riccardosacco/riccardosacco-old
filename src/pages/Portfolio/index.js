@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 
 import Context from "../../context";
 
@@ -10,20 +10,15 @@ const Portfolio = ({ title }) => {
     document.title = title;
   });
 
+  const { portfolio } = useContext(Context).settings;
+
   return (
-    <Context.Consumer>
-      {context => {
-        const { portfolio } = context.settings;
-        return (
-          <div className="portfolio page">
-            <div className="container">
-              <h2>{portfolio.title}</h2>
-              <PortfolioGrid portfolio={portfolio.projects} />
-            </div>
-          </div>
-        );
-      }}
-    </Context.Consumer>
+    <div className="portfolio page">
+      <div className="container">
+        <h2>{portfolio.title}</h2>
+        <PortfolioGrid portfolio={portfolio.projects} page="/portfolio" />
+      </div>
+    </div>
   );
 };
 

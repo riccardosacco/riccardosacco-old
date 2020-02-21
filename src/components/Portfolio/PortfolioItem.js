@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import slugify from "slugify";
-
-const PortfolioItem = ({ project }) => (
-  <Link to={`/portfolio/${slugify(project.title).toLowerCase()}`}>
+const PortfolioItem = ({ project, page }) => (
+  <Link
+    to={{
+      pathname: `/portfolio/${project.slug}`,
+      state: {
+        page
+      }
+    }}
+  >
     <div className="portfolio-item">
       <div className="overlay"></div>
       <div

@@ -157,6 +157,8 @@ export default {
         title: "Loyable",
         subtitle: "Digital loyalty platform",
         client: "Loyable Sagl",
+        website: "https://loyable.com",
+        slug: "loyable",
         screenshots: ["loyable1.png"],
         technologies: [
           {
@@ -168,12 +170,14 @@ export default {
             values: ["NodeJS", "Express", "MongoDB"]
           }
         ],
-        description: ""
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At culpa voluptatum nemo amet sed molestias nihil quam sequi, laudantium iste magnam delectus eaque id a voluptate ratione reprehenderit, in ad necessitatibus rerum quasi voluptas similique. Molestiae fugit, necessitatibus non quae enim minus vel dolorum ut aspernatur porro eius beatae quisquam."
       },
       {
         title: "Evaluation Form",
         subtitle: "Questionario digitale feedback per eventi",
         client: "ADM Media Consulting",
+        slug: "evaluation-form",
         screenshots: ["evaluationform1.png"],
         technologies: [
           {
@@ -191,6 +195,7 @@ export default {
         title: "Live Event",
         subtitle: "Piattaforma per la gestione di eventi live streaming",
         client: "ADM Media Consulting",
+        slug: "live-event",
         screenshots: ["live-event1.png"],
         technologies: [
           {
@@ -205,9 +210,10 @@ export default {
         description: ""
       },
       {
-        title: "Controllo Ore",
+        title: "Employees Management",
         subtitle: "Gestionale controllo ore integrato con SAP",
         client: "Veragouth",
+        slug: "employees-management",
         screenshots: ["controllo-ore1.png"],
         technologies: [
           {
@@ -222,9 +228,10 @@ export default {
         description: ""
       },
       {
-        title: "Gestione Anagrafica",
+        title: "User Management",
         subtitle: "Piattaforma gestione anagrafica multiutente",
         client: "SG Lugano",
+        slug: "user-management",
         screenshots: ["anagrafica1.png"],
         technologies: [
           {
@@ -242,6 +249,7 @@ export default {
         title: "Web Catalog",
         subtitle: "Catalogo digitale con integrazione e-commerce",
         client: "Peirano Vivai",
+        slug: "web-catalog",
         screenshots: ["catalogo-piante1.png"],
         technologies: [
           {
@@ -256,9 +264,10 @@ export default {
         description: ""
       },
       {
-        title: "Gestione Flotta",
+        title: "Fleet Management",
         subtitle: "Piattaforma per organizzazione flotta veicoli",
         client: "Romantic Tour",
+        slug: "fleet-management",
         screenshots: ["gestionale-bus1.png"],
         technologies: [
           {
@@ -273,9 +282,10 @@ export default {
         description: ""
       },
       {
-        title: "Modulo Preventivo",
+        title: "Quote Form",
         subtitle: "Modulo per richiesta preventivo prodotti",
         client: "Ghielmimport",
+        slug: "quote-form",
         screenshots: ["richiesta-offerta1.png"],
         technologies: [
           {
@@ -293,6 +303,7 @@ export default {
         title: "REX.CH",
         subtitle: "Sito web istituzionale",
         client: "REX Articoli Tecnici SA",
+        slug: "rexch",
         screenshots: ["rex1.png"],
         technologies: [
           {

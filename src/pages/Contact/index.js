@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import ReactHtmlParser from "react-html-parser";
 
 import Context from "../../context";
@@ -12,26 +12,21 @@ const Contact = ({ title }) => {
     document.title = title;
   });
 
+  const { contact, businessCard } = useContext(Context).settings;
+
   return (
-    <Context.Consumer>
-      {context => {
-        const { contact, businessCard } = context.settings;
-        return (
-          <div className="contact page">
-            <div className="container">
-              <h2>{contact.title}</h2>
-              <p>{ReactHtmlParser(contact.subtitle)}</p>
-              <div className="contact-row">
-                <ContactForm />
-                <div className="contact-details">
-                  <BusinessCard {...businessCard} />
-                </div>
-              </div>
-            </div>
+    <div className="contact page">
+      <div className="container">
+        <h2>{contact.title}</h2>
+        <p>{ReactHtmlParser(contact.subtitle)}</p>
+        <div className="contact-row">
+          <ContactForm />
+          <div className="contact-details">
+            <BusinessCard {...businessCard} />
           </div>
-        );
-      }}
-    </Context.Consumer>
+        </div>
+      </div>
+    </div>
   );
 };
 
