@@ -1,9 +1,4 @@
 .project {
-  //Variables
-  $border-card: 4px solid rgba(255, 255, 255, 0.1);
-  $background-color: lighten($primary-color, 6);
-
-  position: relative;
   .project-navigation {
     display: flex;
     align-items: center;
@@ -20,37 +15,54 @@
   .project-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: $background-color;
+    background-color: lighten($primary-color, 6);
     border-radius: 1rem;
     overflow: hidden;
-    border: $border-card;
-    // box-shadow: $box-shadow;
+    // border: 2px solid rgba(255, 255, 255, 0.1);
 
     @include media-breakpoint-down(md) {
       & {
+        grid-template-columns: 1fr;
       }
     }
 
     .project-details {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      padding: 1rem 2rem;
+      justify-content: space-between;
+      padding: 1.5rem;
+      font-size: 100%;
+
+      @include media-breakpoint-down(lg) {
+        & {
+          font-size: 80%;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        & {
+          padding: 1rem;
+          font-size: 90%;
+        }
+      }
       .title {
         font-family: $font-family-heading;
-        font-size: 2rem;
+        font-size: 2em;
       }
       .subtitle {
         color: rgba($text-color, 0.6);
       }
-      .client,
-      .website {
-        font-size: 1.25rem;
-        b {
-          font-weight: bold;
-          letter-spacing: normal;
-          font-family: $font-family-heading;
-          color: rgba($text-color, 0.6);
+      .project-meta {
+        margin: 1rem 0;
+        .client,
+        .website {
+          font-size: 1.25em;
+          b {
+            font-weight: bold;
+            letter-spacing: normal;
+            font-family: $font-family-heading;
+            color: rgba($text-color, 0.6);
+          }
         }
       }
       .technologies {
@@ -59,35 +71,26 @@
         flex-wrap: wrap;
         .technology {
           .name {
-            font-size: 1.25rem;
+            font-size: 1.25em;
             font-family: $font-family-heading;
             color: rgba($text-color, 0.6);
           }
           .values {
+            font-size: 1em;
             letter-spacing: 1px;
           }
         }
       }
     }
     .project-image {
-      padding-top: 65%;
-      background-repeat: no-repeat;
+      padding-top: 55%;
+      background-position: top left;
       background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
     }
   }
   .project-description {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: $background-color;
-    border: $border-card;
-    border-radius: 1rem;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
   }
 }

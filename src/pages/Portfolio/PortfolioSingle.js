@@ -1,26 +1,53 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 
 import { Link } from "react-router-dom";
+
+import { Carousel, Modal } from "react-bootstrap";
 
 import ReactHtmlParser from "react-html-parser";
 
 import Context from "../../context";
 
 const PortfolioSingle = props => {
-  //Change document title
-  useEffect(() => {
-    document.title = props.title;
-  });
+  const { portfolio, name } = useContext(Context).settings;
 
   const { slug } = props.match.params;
 
-  const { portfolio } = useContext(Context).settings;
-
   const project = portfolio.projects.find(project => project.slug === slug);
+
+  //Change document title
+  useEffect(() => {
+    document.title = `${project.title} - ${name}`;
+  });
+
+  const [modal, setModal] = useState(false);
 
   return (
     <div className="portfolio page">
-      <div className="overlay"></div>
+      <Modal size="lg" show={modal} onHide={() => setModal(false)}>
+        <Modal.Body>
+          <Carousel>
+            {project.screenshots.map((screenshot, index) => (
+              <Carousel.Item>
+                <img
+                  className="portfolio-image d-block w-100"
+                  src={`/img/portfolio/${screenshot}`}
+                  alt={screenshot}
+                  key={index}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </Modal.Body>
+      </Modal>
+      {/* <div
+        id="portfolio-modal"
+        className="portfolio-modal"
+        onClick={toggleModal}
+      >
+        <div className="portfolio-modal-content">
+                </div>
+      </div> */}
       <div className="container">
         <div className="project">
           <div className="project-navigation">
@@ -37,7 +64,7 @@ const PortfolioSingle = props => {
                 <div className="title">{project.title}</div>
                 <div className="subtitle">{project.subtitle}</div>
               </div>
-              <div>
+              <div className="project-meta">
                 {project.client && (
                   <div className="client">
                     <b>Client: </b>
@@ -75,6 +102,7 @@ const PortfolioSingle = props => {
               style={{
                 backgroundImage: `url("/img/portfolio/${project.screenshots[0]}")`
               }}
+              onClick={() => setModal(true)}
             ></div>
           </div>
           {project.description !== "" && (
