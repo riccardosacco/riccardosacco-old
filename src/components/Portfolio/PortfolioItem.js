@@ -15,7 +15,7 @@ const PortfolioItem = ({ project, page }) => (
       <div
         className="background"
         style={{
-          backgroundImage: `url("img/portfolio/${project.screenshots[0]}")`
+          backgroundImage: `url("img/portfolio/${project.slug}/${project.screenshots[0]}")`
         }}
         alt={project.title}
       />

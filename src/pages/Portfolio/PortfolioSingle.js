@@ -82,7 +82,7 @@ const PortfolioSingle = props => {
                 <Carousel.Item>
                   <img
                     className="portfolio-image d-block w-100"
-                    src={`/img/portfolio/${screenshot}`}
+                    src={`/img/portfolio/${project.slug}/${screenshot}`}
                     alt={screenshot}
                     key={index}
                   />
