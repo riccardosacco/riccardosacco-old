@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import axios from "axios";
-
 const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
