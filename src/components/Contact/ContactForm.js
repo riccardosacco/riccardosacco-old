@@ -36,7 +36,7 @@ const ContactForm = () => {
             id=""
             rows="10"
           ></textarea>
-          <div className="button button-block">Contact Me</div>
+          <button className="button button-block">Contact Me</button>
         </div>
       )}
     </NetlifyForm>
