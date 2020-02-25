@@ -77,7 +77,7 @@ const PortfolioSingle = props => {
                 </div>
               )}
             </div>
-            <Carousel>
+            <Carousel interval={2500}>
               {project.screenshots.map((screenshot, index) => (
                 <Carousel.Item>
                   <img
