@@ -72,3 +72,11 @@ ul {
     height: 30px;
   }
 }
+
+.alert-custom {
+  display: flex;
+  justify-content: space-between;
+  .close-icon {
+    cursor: pointer;
+  }
+}
