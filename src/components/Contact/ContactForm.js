@@ -15,14 +15,13 @@ const ContactForm = () => {
   const handleSubmit = async e => {
     e.preventDefault();
 
-    const response = await axios.post("/", form);
+    const response = await axios.post("/", { "form-name": "contact", ...form });
 
     console.log(response);
   };
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <input type="hidden" name="form-name" value="contact" />
       <input
         id="name"
         className="contact-input"
