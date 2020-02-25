@@ -21,19 +21,21 @@ const ContactForm = () => {
           <input
             className="contact-input"
             placeholder="Name"
+            name="name"
             type="text"
             required
           />
           <input
             className="contact-input"
             placeholder="Email"
+            name="email"
             type="email"
             required
           />
           <textarea
             className="contact-input"
             placeholder="Message"
-            id=""
+            name="message"
             rows="10"
           ></textarea>
           <button className="button button-block">Contact Me</button>
