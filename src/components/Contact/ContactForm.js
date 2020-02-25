@@ -2,6 +2,12 @@ import React, { useState } from "react";
 
 import axios from "axios";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 const ContactForm = () => {
   const [form, setForm] = useState({});
 
@@ -15,7 +21,11 @@ const ContactForm = () => {
   const handleSubmit = async e => {
     e.preventDefault();
 
-    const response = await axios.post("/", { "form-name": "contact", ...form });
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...form })
+    });
 
     console.log(response);
   };
