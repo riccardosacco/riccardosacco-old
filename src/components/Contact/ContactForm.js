@@ -1,47 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 
-import NetlifyForm from "react-netlify-form";
+import axios from "axios";
 
 const ContactForm = () => {
+  const [form, setForm] = useState({});
+
+  const handleChange = e => {
+    setForm({
+      ...form,
+      [e.target.id]: e.target.value
+    });
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+
+    const response = await axios.post("/", form);
+
+    console.log(response);
+  };
+
   return (
-    <NetlifyForm name="Contact Form">
-      {({ loading, error, success }) => (
-        <div className="contact-form" id="contact-form">
-          {loading && <div className="alert alert-info">Loading...</div>}
-          {error && (
-            <div className="alert alert-error">
-              Your information was not sent. Please try again later.
-            </div>
-          )}
-          {success && (
-            <div className="alert alert-success">
-              Thank you for contacting me!
-            </div>
-          )}
-          <input
-            className="contact-input"
-            placeholder="Name"
-            name="name"
-            type="text"
-            required
-          />
-          <input
-            className="contact-input"
-            placeholder="Email"
-            name="email"
-            type="email"
-            required
-          />
-          <textarea
-            className="contact-input"
-            placeholder="Message"
-            name="message"
-            rows="10"
-          ></textarea>
-          <button className="button button-block">Contact Me</button>
-        </div>
-      )}
-    </NetlifyForm>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="contact" />
+      <input
+        id="name"
+        className="contact-input"
+        placeholder="Name"
+        type="text"
+        onChange={handleChange}
+        required
+      />
+      <input
+        id="email"
+        className="contact-input"
+        placeholder="Email"
+        type="email"
+        onChange={handleChange}
+        required
+      />
+      <textarea
+        id="message"
+        className="contact-input"
+        placeholder="Message"
+        onChange={handleChange}
+        rows="10"
+      ></textarea>
+      <button type="submit" className="button button-block">
+        Contact Me
+      </button>
+    </form>
   );
 };
 
