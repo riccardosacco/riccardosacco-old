@@ -10,7 +10,7 @@ const Testimonials = () => {
       {!testimonials.hidden && (
         <section className="testimonialspage home">
           <div className="container">
-            <h2>Testimonials</h2>
+            <h2>{testimonials.title}</h2>
             <p></p>
             <TestimonialsItems />
           </div>
