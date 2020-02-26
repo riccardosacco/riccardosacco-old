@@ -159,7 +159,13 @@ export default {
         client: "Loyable Sagl",
         website: "https://loyable.com",
         slug: "loyable",
-        screenshots: ["loyable1.png"],
+        screenshots: [
+          "website.png",
+          "design-system.png",
+          "user-app.png",
+          "merchant-app.png",
+          "materiale-promozionale.png"
+        ],
         technologies: [
           {
             name: "Frontend",
@@ -170,15 +176,20 @@ export default {
             values: ["NodeJS", "Express", "MongoDB"]
           }
         ],
-        description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At culpa voluptatum nemo amet sed molestias nihil quam sequi, laudantium iste magnam delectus eaque id a voluptate ratione reprehenderit, in ad necessitatibus rerum quasi voluptas similique. Molestiae fugit, necessitatibus non quae enim minus vel dolorum ut aspernatur porro eius beatae quisquam."
+        description: ""
       },
       {
         title: "Evaluation Form",
-        subtitle: "Questionario digitale feedback per eventi",
+        subtitle: "Online feedback system for events",
         client: "ADM Media Consulting",
         slug: "evaluation-form",
-        screenshots: ["evaluationform1.png"],
+        screenshots: [
+          "home.png",
+          "home2.png",
+          "questions.png",
+          "report.png",
+          "settings.png"
+        ],
         technologies: [
           {
             name: "Frontend",
@@ -193,10 +204,18 @@ export default {
       },
       {
         title: "Live Event",
-        subtitle: "Piattaforma per la gestione di eventi live streaming",
+        subtitle: "Live streaming events platform",
         client: "ADM Media Consulting",
         slug: "live-event",
-        screenshots: ["live-event1.png"],
+        screenshots: [
+          "home.png",
+          "livepage.png",
+          "settings.png",
+          "agenda.png",
+          "bios.png",
+          "email.png",
+          "report.png"
+        ],
         technologies: [
           {
             name: "Frontend",
@@ -211,10 +230,17 @@ export default {
       },
       {
         title: "Employees Management",
-        subtitle: "Gestionale controllo ore integrato con SAP",
+        subtitle: "ERP integrated with SAP",
         client: "Veragouth",
         slug: "employees-management",
-        screenshots: ["controllo-ore1.png"],
+        screenshots: [
+          "ore.png",
+          "calendario.png",
+          "dipendenti.png",
+          "report.png",
+          "stazionilavoro.png",
+          "gestionecalendario.png"
+        ],
         technologies: [
           {
             name: "Frontend",
@@ -229,10 +255,10 @@ export default {
       },
       {
         title: "User Management",
-        subtitle: "Piattaforma gestione anagrafica multiutente",
+        subtitle: "Multi-roles user management system",
         client: "SG Lugano",
         slug: "user-management",
-        screenshots: ["anagrafica1.png"],
+        screenshots: ["dashboard.png", "soci.png"],
         technologies: [
           {
             name: "Frontend",
@@ -247,10 +273,18 @@ export default {
       },
       {
         title: "Web Catalog",
-        subtitle: "Catalogo digitale con integrazione e-commerce",
+        subtitle: "Digital catalog with e-commerce integration",
         client: "Peirano Vivai",
+        website: "https://catalogo.peiranovivai.it",
         slug: "web-catalog",
-        screenshots: ["catalogo-piante1.png"],
+        screenshots: [
+          "catalogo.png",
+          "navigafoto.png",
+          "listacatalogo.png",
+          "dettagli.png",
+          "carrello.png",
+          "ordine.png"
+        ],
         technologies: [
           {
             name: "Frontend",
@@ -265,10 +299,10 @@ export default {
       },
       {
         title: "Fleet Management",
-        subtitle: "Piattaforma per organizzazione flotta veicoli",
+        subtitle: "Fleet management ERP for a travel agency",
         client: "Romantic Tour",
         slug: "fleet-management",
-        screenshots: ["gestionale-bus1.png"],
+        screenshots: ["bus.png", "viaggio.png"],
         technologies: [
           {
             name: "Frontend",
@@ -283,10 +317,18 @@ export default {
       },
       {
         title: "Quote Form",
-        subtitle: "Modulo per richiesta preventivo prodotti",
+        subtitle: "Online quote request form",
         client: "Ghielmimport",
+        website: "https://ghielmimport.ch/offerta/",
         slug: "quote-form",
-        screenshots: ["richiesta-offerta1.png"],
+        screenshots: [
+          "home.png",
+          "ferro.png",
+          "cemento.png",
+          "accessori-ferro.png",
+          "accessori-speciali.png",
+          "easyfit.png"
+        ],
         technologies: [
           {
             name: "Frontend",
@@ -301,10 +343,11 @@ export default {
       },
       {
         title: "REX.CH",
-        subtitle: "Sito web istituzionale",
+        subtitle: "Corporate website",
         client: "REX Articoli Tecnici SA",
+        website: "https://rex.ch",
         slug: "rexch",
-        screenshots: ["rex1.png"],
+        screenshots: ["home.png", "products.png", "company.png"],
         technologies: [
           {
             name: "CMS",

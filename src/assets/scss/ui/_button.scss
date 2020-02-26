@@ -9,6 +9,7 @@
   border-radius: 0.25rem;
   transition: 0.5s background-color;
   border: 1px solid #fff;
+  outline: none;
   cursor: pointer;
   &:hover {
     background: invert($primary-color);
