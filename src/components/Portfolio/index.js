@@ -7,7 +7,11 @@ const PortfolioGrid = ({ portfolio, items, page }) => {
     portfolio = portfolio.slice(0, items);
   }
   return (
-    <div className="portfolio-grid">
+    <div
+      className={`portfolio-grid${
+        page === "/portfolio" ? " portfolio-page" : ""
+      }`}
+    >
       {portfolio.map((project, index) => (
         <PortfolioItem key={index} project={project} page={page} />
       ))}

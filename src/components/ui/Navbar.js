@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   const toggleNavbar = e => {
     const sidebar = document.querySelector(".sidebar");
@@ -22,7 +24,9 @@ export default function Navbar() {
     <>
       <div className="navbar-mobile">
         <div className="sidebar-overlay" onClick={toggleNavbar}></div>
-        <h1 className="name">Riccardo Sacco</h1>
+        <Link to="/">
+          <h1 className="name">Riccardo Sacco</h1>
+        </Link>
         <div className="hamburger" onClick={toggleNavbar}>
           <div className="bar1"></div>
           <div className="bar2"></div>
