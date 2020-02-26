@@ -593,6 +593,33 @@ export default {
       ]
     }
   },
+  testimonials: {
+    hidden: true,
+    title: "Testimonials",
+    items: [
+      {
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos est cumque soluta ipsa reprehenderit deleniti possimus omnis quis tempore.",
+        avatar: "",
+        name: "Matteo Ferrini",
+        job: "IT Pro Services"
+      },
+      {
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos est cumque soluta ipsa reprehenderit deleniti possimus omnis quis tempore.",
+        avatar: "",
+        name: "Matteo Ferrini",
+        job: "IT Pro Services"
+      },
+      {
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos est cumque soluta ipsa reprehenderit deleniti possimus omnis quis tempore.",
+        avatar: "",
+        name: "Matteo Ferrini",
+        job: "IT Pro Services"
+      }
+    ]
+  },
   contact: {
     title: "Contact me",
     subtitle:
