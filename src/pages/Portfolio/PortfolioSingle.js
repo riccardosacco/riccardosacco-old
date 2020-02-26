@@ -40,14 +40,6 @@ const PortfolioSingle = props => {
           </Carousel>
         </Modal.Body>
       </Modal>
-      {/* <div
-        id="portfolio-modal"
-        className="portfolio-modal"
-        onClick={toggleModal}
-      >
-        <div className="portfolio-modal-content">
-                </div>
-      </div> */}
       <div className="container">
         <div className="project">
           <div className="project-navigation">
