@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 
 import { Link } from "react-router-dom";
 
-import { Carousel } from "react-bootstrap";
+import { Modal, Carousel } from "react-bootstrap";
 
 import ReactHtmlParser from "react-html-parser";
 
@@ -22,22 +22,6 @@ const PortfolioSingle = props => {
 
   return (
     <div className="portfolio page">
-      <Modal size="lg" show={modal} onHide={() => setModal(false)}>
-        <Modal.Body>
-          <Carousel>
-            {project.screenshots.map((screenshot, index) => (
-              <Carousel.Item>
-                <img
-                  className="portfolio-image d-block w-100"
-                  src={`/img/portfolio/${screenshot}`}
-                  alt={screenshot}
-                  key={index}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Modal.Body>
-      </Modal>
       <div className="container">
         <div className="project">
           <div className="project-navigation">
