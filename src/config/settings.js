@@ -398,7 +398,9 @@ export default {
           place: "Milan, Italy",
           icon: "wildcodeschool.png",
           from: new Date("2020-01-01"),
-          to: new Date()
+          to: new Date(),
+          description:
+            "Trainer at Wild Code School Milan, a school where students learn JavaScript, NodeJS and React to become Full Stack Developers"
         },
         {
           title: "Full Stack Developer",
