@@ -596,29 +596,22 @@ export default {
     }
   },
   testimonials: {
-    hidden: true,
+    hidden: false,
     title: "Testimonials",
     items: [
       {
         description:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos est cumque soluta ipsa reprehenderit deleniti possimus omnis quis tempore.",
+          "I know Riccardo since his first big project when he was only 14 years old, it’s always a pleasure to work with him.",
         avatar: "",
         name: "Matteo Ferrini",
         job: "IT Pro Services"
       },
       {
         description:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos est cumque soluta ipsa reprehenderit deleniti possimus omnis quis tempore.",
+          "Riccardo is an extremely valuable professional with an outstanding programming talent. Solid management skills, deep work attitude and incredible knowledge of top-notch coding technologies.",
         avatar: "",
-        name: "Matteo Ferrini",
-        job: "IT Pro Services"
-      },
-      {
-        description:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos est cumque soluta ipsa reprehenderit deleniti possimus omnis quis tempore.",
-        avatar: "",
-        name: "Matteo Ferrini",
-        job: "IT Pro Services"
+        name: "Francesco Luciani",
+        job: "Wild Code School"
       }
     ]
   },
