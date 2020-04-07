@@ -4,7 +4,7 @@ import Context from "../../context";
 
 import ResumeItem from "../../components/Resume";
 
-const Resume = title => {
+const Resume = ({ title }) => {
   //Change document title
   useEffect(() => {
     document.title = title;

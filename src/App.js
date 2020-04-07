@@ -43,7 +43,6 @@ const App = () => (
               render={props => (
                 <PortfolioSingle
                   {...props}
-                  {...settings}
                   title={`Portfolio - ${settings.name}`}
                 />
               )}
@@ -51,11 +50,7 @@ const App = () => (
             <Route
               path="/resume"
               render={props => (
-                <Resume
-                  {...props}
-                  {...settings}
-                  title={`Resume - ${settings.name}`}
-                />
+                <Resume {...props} title={`Resume - ${settings.name}`} />
               )}
             />
             <Route
