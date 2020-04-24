@@ -65,6 +65,8 @@
           @include media-breakpoint-down(md) {
             & {
               border-left: none;
+              padding-left: 0;
+              margin-left: 0;
             }
           }
         }

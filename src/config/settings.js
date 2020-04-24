@@ -10,62 +10,62 @@ export default {
     {
       name: "facebook",
       link: "https://www.facebook.com/riccardo.sacco.90",
-      color: "#3b5998"
+      color: "#3b5998",
     },
     {
       name: "github",
-      link: "https://github.com/rickybag/",
-      color: "#333"
+      link: "https://github.com/riccardosacco/",
+      color: "#333",
     },
     {
       name: "linkedin",
       link: "https://www.linkedin.com/in/riccardo-sacco",
-      color: "#0976b4"
+      color: "#0976b4",
     },
     {
       name: "instagram",
       link: "https://www.instagram.com/rickysacco99/",
       color:
-        "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)"
-    }
+        "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
+    },
   ],
   contacts: [
     {
       value: "+39 339 1848457",
       link: "tel:+393391848457",
-      icon: "fa fa-phone-square-alt"
+      icon: "fa fa-phone-square-alt",
     },
     {
       value: "riccardo@itwebservices.it",
       link: "mailto:riccardo@itwebservices.it",
-      icon: "fa fa-envelope-square"
-    }
+      icon: "fa fa-envelope-square",
+    },
   ],
   navigation: [
     {
       path: "/",
       icon: "fa fa-user",
       label: "About Me",
-      component: "About"
+      component: "About",
     },
     {
       path: "/portfolio",
       icon: "fa fa-laptop-code",
       label: "Portfolio",
-      component: "Portfolio"
+      component: "Portfolio",
     },
     {
       path: "/resume",
       icon: "fa fa-file-alt",
       label: "Resume",
-      component: "Resume"
+      component: "Resume",
     },
     {
       path: "/contact",
       icon: "fa fa-envelope-open-text",
       label: "Contact",
-      component: "Contact"
-    }
+      component: "Contact",
+    },
   ],
   skills: {
     title: "What I do",
@@ -76,78 +76,78 @@ export default {
         name: "HTML5 & CSS3",
         icons: [
           { icon: "fab fa-html5 mr-1", color: "#DE6E3C" },
-          { icon: "fab fa-css3-alt ml-1", color: "#53A7DC" }
-        ]
+          { icon: "fab fa-css3-alt ml-1", color: "#53A7DC" },
+        ],
       },
       {
         name: "JavaScript",
-        icons: [{ icon: "fab fa-js-square", color: "#F1DE4F" }]
+        icons: [{ icon: "fab fa-js-square", color: "#F1DE4F" }],
       },
       {
         name: "React & React Native",
-        icons: [{ icon: "fab fa-react", color: "#62D4FA" }]
+        icons: [{ icon: "fab fa-react", color: "#62D4FA" }],
       },
       {
         name: "iOS & Android",
         icons: [
           { icon: "fab fa-app-store-ios mr-2", color: "#5fbef1" },
-          { icon: "fab fa-google-play ml-2", color: "#75d58e" }
-        ]
+          { icon: "fab fa-google-play ml-2", color: "#75d58e" },
+        ],
       },
       {
         name: "Node.js & npm",
         icons: [
           { icon: "fab fa-node-js mr-2", color: "#3B7EEB" },
-          { icon: "fab fa-npm ml-2", color: "#b9261a" }
-        ]
+          { icon: "fab fa-npm ml-2", color: "#b9261a" },
+        ],
       },
       {
         name: "Python",
-        icons: [{ icon: "fab fa-python", color: "#5769b8" }]
+        icons: [{ icon: "fab fa-python", color: "#5769b8" }],
       },
       {
         name: "PHP & Laravel",
         icons: [
           { icon: "fab fa-php mr-2", color: "#787caf" },
-          { icon: "fab fa-laravel ml-2", color: "#e65d47" }
-        ]
+          { icon: "fab fa-laravel ml-2", color: "#e65d47" },
+        ],
       },
       {
         name: "Sass & Boostrap",
         icons: [
           { icon: "fab fa-sass mr-1", color: "#BF6B97" },
-          { icon: "fab fa-bootstrap ml-1", color: "#524078" }
-        ]
+          { icon: "fab fa-bootstrap ml-1", color: "#524078" },
+        ],
       },
       {
         name: "Git & Github",
         icons: [
           { icon: "fab fa-git mr-2", color: "#dc5c40" },
-          { icon: "fab fa-github-square ml-2", color: "#eee" }
-        ]
+          { icon: "fab fa-github-square ml-2", color: "#eee" },
+        ],
       },
       {
         name: "Trello & Confluence",
         icons: [
           { icon: "fab fa-trello mr-2", color: "#387ac2" },
-          { icon: "fab fa-confluence ml-2", color: "#427ced" }
-        ]
+          { icon: "fab fa-confluence ml-2", color: "#427ced" },
+        ],
       },
       {
         name: "Figma & Sketch",
         icons: [
           { icon: "fab fa-figma mr-2", color: "#9761f7" },
-          { icon: "fab fa-sketch ml-2", color: "#f0b13e" }
-        ]
+          { icon: "fab fa-sketch ml-2", color: "#f0b13e" },
+        ],
       },
       {
         name: "DigitalOcean & AWS",
         icons: [
           { icon: "fab fa-digital-ocean mr-2", color: "#3b81f7" },
-          { icon: "fab fa-aws ml-2", color: "#ef9d38" }
-        ]
-      }
-    ]
+          { icon: "fab fa-aws ml-2", color: "#ef9d38" },
+        ],
+      },
+    ],
   },
   portfolio: {
     title: "My portfolio",
@@ -164,19 +164,19 @@ export default {
           "design-system.png",
           "user-app.png",
           "merchant-app.png",
-          "materiale-promozionale.png"
+          "materiale-promozionale.png",
         ],
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "React"]
+            values: ["HTML", "CSS", "React"],
           },
           {
             name: "Backend",
-            values: ["NodeJS", "Express", "MongoDB"]
-          }
+            values: ["NodeJS", "Express", "MongoDB"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "Evaluation Form",
@@ -188,19 +188,19 @@ export default {
           "home2.png",
           "questions.png",
           "report.png",
-          "settings.png"
+          "settings.png",
         ],
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "JavaScript"]
+            values: ["HTML", "CSS", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["PHP", "MySQL"]
-          }
+            values: ["PHP", "MySQL"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "Live Event",
@@ -214,19 +214,19 @@ export default {
           "agenda.png",
           "bios.png",
           "email.png",
-          "report.png"
+          "report.png",
         ],
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "JavaScript"]
+            values: ["HTML", "CSS", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["PHP", "MySQL"]
-          }
+            values: ["PHP", "MySQL"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "Employees Management",
@@ -239,19 +239,19 @@ export default {
           "dipendenti.png",
           "report.png",
           "stazionilavoro.png",
-          "gestionecalendario.png"
+          "gestionecalendario.png",
         ],
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "JavaScript"]
+            values: ["HTML", "CSS", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["PHP", "MySQL"]
-          }
+            values: ["PHP", "MySQL"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "User Management",
@@ -262,14 +262,14 @@ export default {
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "JavaScript"]
+            values: ["HTML", "CSS", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["PHP", "MySQL"]
-          }
+            values: ["PHP", "MySQL"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "Web Catalog",
@@ -283,19 +283,19 @@ export default {
           "listacatalogo.png",
           "dettagli.png",
           "carrello.png",
-          "ordine.png"
+          "ordine.png",
         ],
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+            values: ["HTML", "CSS", "Bootstrap", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["PHP", "MySQL"]
-          }
+            values: ["PHP", "MySQL"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "Fleet Management",
@@ -306,14 +306,14 @@ export default {
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+            values: ["HTML", "CSS", "Bootstrap", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["PHP", "MySQL"]
-          }
+            values: ["PHP", "MySQL"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "Quote Form",
@@ -327,19 +327,19 @@ export default {
           "cemento.png",
           "accessori-ferro.png",
           "accessori-speciali.png",
-          "easyfit.png"
+          "easyfit.png",
         ],
         technologies: [
           {
             name: "Frontend",
-            values: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+            values: ["HTML", "CSS", "Bootstrap", "JavaScript"],
           },
           {
             name: "Backend",
-            values: ["NodeJS", "Express"]
-          }
+            values: ["NodeJS", "Express"],
+          },
         ],
-        description: ""
+        description: "",
       },
       {
         title: "REX.CH",
@@ -351,12 +351,12 @@ export default {
         technologies: [
           {
             name: "CMS",
-            values: ["WordPress", "Elementor"]
-          }
+            values: ["WordPress", "Elementor"],
+          },
         ],
-        description: ""
-      }
-    ]
+        description: "",
+      },
+    ],
   },
   resume: {
     title: "My resume",
@@ -366,24 +366,24 @@ export default {
       {
         value: "+39 339 1848457",
         link: "tel:+393391848457",
-        icon: "fa fa-phone-square-alt"
+        icon: "fa fa-phone-square-alt",
       },
       {
         value: "riccardo@itwebservices.it",
         link: "mailto:riccardo@itwebservices.it",
-        icon: "fa fa-envelope-square"
+        icon: "fa fa-envelope-square",
       },
       {
         value: "riccardosacco.com",
         link: "https://riccardosacco.com",
-        icon: "fa fa-globe"
+        icon: "fa fa-globe",
       },
       {
         value: "Milan, Italy",
         link:
           "https://www.google.it/maps/place/IT+Web+Services/@45.4265459,9.2003332,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c45b08e126cb:0x29944543e6792cb7!8m2!3d45.4265459!4d9.2025219",
-        icon: "fa fa-map-marker-alt"
-      }
+        icon: "fa fa-map-marker-alt",
+      },
     ],
     avatar: "img/avatar.png",
     bio:
@@ -400,7 +400,7 @@ export default {
           from: new Date("2020-01-01"),
           to: new Date(),
           description:
-            "Trainer at Wild Code School Milan, a school where students learn JavaScript, NodeJS and React to become Full Stack Developers"
+            "Trainer at Wild Code School Milan, a school where students learn JavaScript, NodeJS and React to become Full Stack Developers",
         },
         {
           title: "Full Stack Developer",
@@ -408,7 +408,7 @@ export default {
           link: "https://itwebservices.it",
           icon: "itwebservices.png",
           from: new Date("2017-10-01"),
-          to: new Date()
+          to: new Date(),
         },
         {
           title: "IT Consultant",
@@ -417,7 +417,7 @@ export default {
           place: "Lugano, Switzerland",
           icon: "itproserv.png",
           from: new Date("2017-06-01"),
-          to: new Date()
+          to: new Date(),
         },
         {
           title: "IT Manager",
@@ -425,23 +425,23 @@ export default {
           link: "https://itwebgroup.org",
           icon: "itwebgroup.jpeg",
           from: new Date("2018-03-01"),
-          to: new Date("2019-10-01")
+          to: new Date("2019-10-01"),
         },
         {
           title: "E-commerce Manager",
           company: "CLASSIC Brand Milan",
           icon: "classicbrandmilan.png",
           from: new Date("2018-01-01"),
-          to: new Date("2019-06-01")
+          to: new Date("2019-06-01"),
         },
         {
           title: "Business Owner",
           company: "HeverHosting",
           icon: "heverhosting.png",
           from: new Date("2014-02-01"),
-          to: new Date("2018-11-01")
-        }
-      ]
+          to: new Date("2018-11-01"),
+        },
+      ],
     },
     skills: {
       title: "Skills",
@@ -453,52 +453,52 @@ export default {
               value: "HTML5",
               icon: {
                 name: "fab fa-html5",
-                color: "#DE6E3C"
-              }
+                color: "#DE6E3C",
+              },
             },
             {
               value: "CSS3",
               icon: {
                 name: "fab fa-css3-alt",
-                color: "#53A7DC"
-              }
+                color: "#53A7DC",
+              },
             },
             {
               value: "JavaScript",
               icon: {
                 name: "fab fa-js-square",
-                color: "#F1DE4F"
-              }
+                color: "#F1DE4F",
+              },
             },
             {
               value: "React & React Native",
               icon: {
                 name: "fab fa-react",
-                color: "#62D4FA"
-              }
+                color: "#62D4FA",
+              },
             },
             {
               value: "Node.js",
               icon: {
                 name: "fab fa-node-js",
-                color: "#3B7EEB"
-              }
+                color: "#3B7EEB",
+              },
             },
             {
               value: "Python",
               icon: {
                 name: "fab fa-python",
-                color: "#5769b8"
-              }
+                color: "#5769b8",
+              },
             },
             {
               value: "PHP",
               icon: {
                 name: "fab fa-php",
-                color: "#787caf"
-              }
-            }
-          ]
+                color: "#787caf",
+              },
+            },
+          ],
         },
         {
           topic: "Professional",
@@ -511,10 +511,10 @@ export default {
             { value: "Big data" },
             { value: "Machine learning" },
             { value: "Internet of Things" },
-            { value: "3D Printing" }
-          ]
-        }
-      ]
+            { value: "3D Printing" },
+          ],
+        },
+      ],
     },
     education: {
       title: "Education",
@@ -524,16 +524,16 @@ export default {
           title: "Ingegneria Informatica",
           icon: "polimi.png",
           from: 2019,
-          to: 2022
+          to: 2022,
         },
         {
           school: "Istituto Maria Ausiliatrice",
           title: "Diploma Liceo Scientifico",
           icon: "maria-ausiliatrice.png",
           from: 2012,
-          to: 2017
-        }
-      ]
+          to: 2017,
+        },
+      ],
     },
     languages: {
       title: "Languages",
@@ -541,24 +541,24 @@ export default {
         {
           language: "Italian",
           level: "Native",
-          icon: "italy"
+          icon: "italy",
         },
         {
           language: "English",
           level: "Professional",
-          icon: "united-kingdom"
+          icon: "united-kingdom",
         },
         {
           language: "French",
           level: "Working",
-          icon: "france"
+          icon: "france",
         },
         {
           language: "Spanish",
           level: "Working",
-          icon: "spain"
-        }
-      ]
+          icon: "spain",
+        },
+      ],
     },
     interests: {
       title: "Interests",
@@ -568,8 +568,8 @@ export default {
         { value: "Adventure" },
         { value: "Motorcycle" },
         { value: "Skiing" },
-        { value: "Drone Photography" }
-      ]
+        { value: "Drone Photography" },
+      ],
     },
     projects: {
       title: "Projects",
@@ -578,22 +578,22 @@ export default {
           title: "Loyable",
           icon: "loyable.png",
           subtitle:
-            "Digital loyalty platform for businesses to simplify stamp-driven promotions"
+            "Digital loyalty platform for businesses to simplify stamp-driven promotions",
         },
         {
           title: "ECOLab",
           icon: "ecolab.png",
           subtitle:
-            "Virtualization of computers in school laboratories, to save energy and be self-sustained with solar panels"
+            "Virtualization of computers in school laboratories, to save energy and be self-sustained with solar panels",
         },
         {
           title: "3D Printing Laboratory",
           icon: "3dprinting.png",
           subtitle:
-            "3D Printing laboratory in Milan, funded by ACLI, where we do courses for children & students"
-        }
-      ]
-    }
+            "3D Printing laboratory in Milan, funded by ACLI, where we do courses for children & students",
+        },
+      ],
+    },
   },
   testimonials: {
     hidden: false,
@@ -604,45 +604,45 @@ export default {
           "I know Riccardo since his first big project when he was only 14 years old, it’s always a pleasure to work with him.",
         avatar: "",
         name: "Matteo Ferrini",
-        job: "IT Pro Services"
+        job: "IT Pro Services",
       },
       {
         description:
           "Riccardo is an extremely valuable professional with an outstanding programming talent. Solid management skills, deep work attitude and incredible knowledge of top-notch coding technologies.",
         avatar: "",
         name: "Francesco Luciani",
-        job: "Wild Code School"
-      }
-    ]
+        job: "Wild Code School",
+      },
+    ],
   },
   contact: {
     title: "Contact me",
     subtitle:
-      "Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email."
+      "Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email.",
   },
   businessCard: {
     header: {
       name: "Riccardo Sacco",
       profession: "IT Consultant",
-      logo: "/img/itwebservices.svg"
+      logo: "/img/itwebservices.svg",
     },
     contacts: [
       {
         key: "Mobile:",
         value: "+39 3391848457",
-        link: "tel:+393391848457"
+        link: "tel:+393391848457",
       },
       {
         key: "Email:",
         value: "riccardo@itwebservices.it",
-        link: "mailto:riccardo@itwebservices.it"
-      }
+        link: "mailto:riccardo@itwebservices.it",
+      },
     ],
     footer: {
       company: "IT Web Services",
       address: "Via Gastone Da Foix 2,<br/>20141 Milano",
       website: "https://itwebservices.it",
-      alias: "itwebservices.it"
-    }
-  }
+      alias: "itwebservices.it",
+    },
+  },
 };
