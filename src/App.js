@@ -11,6 +11,9 @@ import PortfolioSingle from "./pages/Portfolio/PortfolioSingle";
 import Resume from "./pages/Resume/";
 import Contact from "./pages/Contact/";
 
+// 404 page
+import NotFound from "./pages/NotFound";
+
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/ui/Navbar";
 
@@ -27,20 +30,20 @@ const App = () => (
             <Route
               exact
               path="/"
-              render={props => (
+              render={(props) => (
                 <Home {...props} title={`Home - ${settings.name}`} />
               )}
             />
             <Route
               exact
               path="/portfolio"
-              render={props => (
+              render={(props) => (
                 <Portfolio {...props} title={`Portfolio - ${settings.name}`} />
               )}
             />
             <Route
               path="/portfolio/:slug"
-              render={props => (
+              render={(props) => (
                 <PortfolioSingle
                   {...props}
                   title={`Portfolio - ${settings.name}`}
@@ -49,14 +52,19 @@ const App = () => (
             />
             <Route
               path="/resume"
-              render={props => (
+              render={(props) => (
                 <Resume {...props} title={`Resume - ${settings.name}`} />
               )}
             />
             <Route
               path="/contact"
-              render={props => (
+              render={(props) => (
                 <Contact {...props} title={`Contact - ${settings.name}`} />
+              )}
+            />
+            <Route
+              render={(props) => (
+                <NotFound {...props} title={`Not found - ${settings.name}`} />
               )}
             />
           </Switch>
