@@ -30,9 +30,7 @@ const App = () => (
             <Route
               exact
               path="/"
-              render={(props) => (
-                <Home {...props} title={`Home - ${settings.name}`} />
-              )}
+              render={(props) => <Home {...props} title={`${settings.name}`} />}
             />
             <Route
               exact
