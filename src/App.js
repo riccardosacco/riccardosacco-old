@@ -30,7 +30,9 @@ const App = () => (
             <Route
               exact
               path="/"
-              render={(props) => <Home {...props} title={`Homepage - ${settings.name}`} />}
+              render={(props) => (
+                <Home {...props} title={`Homepage - ${settings.name}`} />
+              )}
             />
             <Route
               exact
@@ -64,6 +66,7 @@ const App = () => (
               render={(props) => (
                 <NotFound {...props} title={`Not found - ${settings.name}`} />
               )}
+              status={404}
             />
           </Switch>
         </Analytics>
