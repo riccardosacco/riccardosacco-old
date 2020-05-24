@@ -24,7 +24,7 @@ export default {
     },
     {
       name: "instagram",
-      link: "https://www.instagram.com/rickysacco99/",
+      link: "https://www.instagram.com/riccardosacco10/",
       color:
         "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
     },
@@ -113,7 +113,7 @@ export default {
         ],
       },
       {
-        name: "Sass & Boostrap",
+        name: "Sass & Bootstrap",
         icons: [
           { icon: "fab fa-sass mr-1", color: "#BF6B97" },
           { icon: "fab fa-bootstrap ml-1", color: "#524078" },
@@ -392,13 +392,22 @@ export default {
       title: "Work experiences",
       items: [
         {
+          title: "Back-end developer",
+          company: "Bandyer",
+          link: "https://www.bandyer.com/",
+          place: "Milan, Italy",
+          icon: "bandyer.png",
+          from: new Date("2020-05-11"),
+          to: new Date(),
+        },
+        {
           title: "Lead Instructor",
           company: "Wild Code School",
           link: "https://wildcodeschool.com",
           place: "Milan, Italy",
           icon: "wildcodeschool.png",
           from: new Date("2020-01-01"),
-          to: new Date(),
+          to: new Date("2020-05-20"),
           description:
             "Trainer at Wild Code School Milan, a school where students learn JavaScript, NodeJS and React to become Full Stack Developers",
         },
