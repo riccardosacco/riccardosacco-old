@@ -154,6 +154,25 @@ export default {
     subtitle: "Some of my works",
     projects: [
       {
+        title: "Bandyer",
+        subtitle: "Chat service backend",
+        client: "Bandyer",
+        website: "https://bandyer.com",
+        slug: "bandyer-chat-service",
+        screenshots: ["chat.png", "chat-code.png"],
+        technologies: [
+          {
+            name: "Frontend",
+            values: ["HTML", "CSS", "React"],
+          },
+          {
+            name: "Backend",
+            values: ["NodeJS", "SocketIO", "RabbitMQ", "Redis", "DynamoDB"],
+          },
+        ],
+        description: "",
+      },
+      {
         title: "Loyable",
         subtitle: "Digital loyalty platform",
         client: "Loyable Sagl",
