@@ -417,7 +417,7 @@ export default {
           place: "Milan, Italy",
           icon: "bandyer.png",
           from: new Date("2020-05-11"),
-          to: new Date(),
+          to: new Date("2020-08-07"),
         },
         {
           title: "Lead Instructor",
