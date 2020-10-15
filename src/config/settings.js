@@ -465,13 +465,6 @@ export default {
           to: new Date("2019-10-01"),
         },
         {
-          title: "E-commerce Manager",
-          company: "CLASSIC Brand Milan",
-          icon: "classicbrandmilan.png",
-          from: new Date("2018-01-01"),
-          to: new Date("2019-06-01"),
-        },
-        {
           title: "Business Owner",
           company: "HeverHosting",
           icon: "heverhosting.png",
