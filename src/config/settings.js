@@ -411,6 +411,15 @@ export default {
       title: "Work experiences",
       items: [
         {
+          title: "Cloud Engineer",
+          company: "Sky Italia",
+          link: "https://www.sky.it/",
+          place: "Milan, Italy",
+          icon: "sky.png",
+          from: new Date("2020-10-12"),
+          to: new Date(),
+        },
+        {
           title: "Back-end developer",
           company: "Bandyer",
           link: "https://www.bandyer.com/",
