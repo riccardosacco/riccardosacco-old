@@ -427,6 +427,15 @@ export default {
         },
         {
           title: "Back-end developer",
+          company: "Fastweb",
+          link: "https://www.fastweb.it/",
+          place: "Milan, Italy",
+          icon: "fastweb.png",
+          from: new Date("2020-12-01"),
+          to: new Date("2021-04-15"),
+        },
+        {
+          title: "Back-end developer",
           company: "Bandyer",
           link: "https://www.bandyer.com/",
           place: "Milan, Italy",
