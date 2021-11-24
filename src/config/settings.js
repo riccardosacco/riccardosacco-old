@@ -1,8 +1,7 @@
 export default {
   name: "Riccardo Sacco",
   avatar: "/img/avatar.png",
-  bio:
-    "Hi, my name is Riccardo Sacco and I'm a full stack developer. Welcome to my website!",
+  bio: "Hi, my name is Riccardo Sacco and I'm a full stack developer. Welcome to my website!",
   job: "Full Stack Developer",
   description:
     "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes.<br/> I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
@@ -399,17 +398,24 @@ export default {
       },
       {
         value: "Milan, Italy",
-        link:
-          "https://www.google.it/maps/place/IT+Web+Services/@45.4265459,9.2003332,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c45b08e126cb:0x29944543e6792cb7!8m2!3d45.4265459!4d9.2025219",
+        link: "https://www.google.it/maps/place/IT+Web+Services/@45.4265459,9.2003332,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c45b08e126cb:0x29944543e6792cb7!8m2!3d45.4265459!4d9.2025219",
         icon: "fa fa-map-marker-alt",
       },
     ],
     avatar: "img/avatar.png",
-    bio:
-      "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes. <br/>I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
+    bio: "I’ve been passionate about programming since I was 13 and I love to learn. I believe in the learn-by-doing approach because I’ve always learned from mistakes. <br/>I love my job so much that it doesn’t feel like I'm working. Sometimes I make decisions, sometimes I change my mind, but everytime I get to the best solution.",
     works: {
       title: "Work experiences",
       items: [
+        {
+          title: "Lead Frontend Engineer",
+          company: "DeepCloud AG",
+          link: "https://www.deepcloud.swiss/",
+          place: "Lugano, Switzerland",
+          icon: "deepcloud.png",
+          from: new Date("2021-10-31"),
+          to: new Date(),
+        },
         {
           title: "Cloud Engineer",
           company: "Sky Italia",
@@ -417,7 +423,7 @@ export default {
           place: "Milan, Italy",
           icon: "sky.png",
           from: new Date("2020-10-12"),
-          to: new Date(),
+          to: new Date("2021-10-31"),
         },
         {
           title: "Back-end developer",
