@@ -479,13 +479,6 @@ export default {
           from: new Date("2018-03-01"),
           to: new Date("2019-10-01"),
         },
-        {
-          title: "Business Owner",
-          company: "HeverHosting",
-          icon: "heverhosting.png",
-          from: new Date("2014-02-01"),
-          to: new Date("2018-11-01"),
-        },
       ],
     },
     skills: {
