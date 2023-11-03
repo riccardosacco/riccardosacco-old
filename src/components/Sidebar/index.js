@@ -10,30 +10,21 @@ import Context from "../../context";
 const Sidebar = () => {
   return (
     <Context.Consumer>
-      {context => {
-        const {
-          name,
-          avatar,
-          bio,
-          social,
-          navigation,
-          contacts
-        } = context.settings;
+      {(context) => {
+        const { name, avatar, bio, social, navigation, contacts } =
+          context.settings;
         return (
-          <>
-            <div className="sidebar">
-              <div>
-                <Link to="/">
-                  <h2 className="name">{name}</h2>
-                </Link>
+          <div className="sidebar">
+            <div>
+              <Link to="/">
                 <img className="avatar" src={avatar} alt={name} />
-                <p className="bio">{bio}</p>
-                <Social social={social} />
-                <Nav navItems={navigation} />
-              </div>
-              <Contacts contacts={contacts} />
+              </Link>
+              <p className="bio">{bio}</p>
+              <Social social={social} />
+              <Nav navItems={navigation} />
             </div>
-          </>
+            <Contacts contacts={contacts} />
+          </div>
         );
       }}
     </Context.Consumer>
