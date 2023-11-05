@@ -551,8 +551,8 @@ export default {
           school: "Politecnico di Milano",
           title: "Ingegneria Informatica",
           icon: "polimi.png",
-          from: 2019,
-          to: 2022,
+          from: 2020,
+          to: 2023,
         },
         {
           school: "Istituto Maria Ausiliatrice",
@@ -573,7 +573,7 @@ export default {
         },
         {
           language: "English",
-          level: "Professional",
+          level: "C1",
           icon: "united-kingdom",
         },
         {
