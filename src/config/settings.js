@@ -408,11 +408,11 @@ export default {
       title: "Work experiences",
       items: [
         {
-          title: "Full Stack Developer",
-          company: "IT Web Services",
-          link: "https://itwebservices.it",
-          icon: "itwebservices.png",
-          from: new Date("2017-10-01"),
+          title: "Full Stack Engineer",
+          company: "itweb.dev",
+          link: "https://itweb.dev",
+          icon: "itwebdev.png",
+          from: new Date("2023-11-15"),
           to: new Date(),
         },
         {
@@ -425,11 +425,19 @@ export default {
           to: new Date(),
         },
         {
+          title: "Full Stack Developer",
+          company: "IT Web Services",
+          link: "https://itwebservices.it",
+          icon: "itwebservices.png",
+          from: new Date("2017-10-01"),
+          to: new Date("2023-11-15"),
+        },
+        {
           title: "Lead Frontend Engineer",
           company: "DeepCloud AG",
           link: "https://www.deepcloud.swiss/",
           place: "Lugano, Switzerland",
-          icon: "deepcloud.png",
+          icon: "deepcloud.jpeg",
           from: new Date("2021-10-31"),
           to: new Date("2022-11-31"),
         },
@@ -443,7 +451,7 @@ export default {
           to: new Date("2021-10-31"),
         },
         {
-          title: "Back-end developer",
+          title: "Backend Developer",
           company: "Fastweb",
           link: "https://www.fastweb.it/",
           place: "Milan, Italy",
@@ -452,16 +460,7 @@ export default {
           to: new Date("2021-04-15"),
         },
         {
-          title: "Back-end developer",
-          company: "Bandyer",
-          link: "https://www.bandyer.com/",
-          place: "Milan, Italy",
-          icon: "bandyer.png",
-          from: new Date("2020-05-11"),
-          to: new Date("2020-08-07"),
-        },
-        {
-          title: "Lead Instructor",
+          title: "Lead JavaScript Instructor",
           company: "Wild Code School",
           link: "https://wildcodeschool.com",
           place: "Milan, Italy",
@@ -478,24 +477,24 @@ export default {
           topic: "Technical",
           list: [
             {
-              value: "HTML5",
+              value: "HTML",
               icon: {
                 name: "fab fa-html5",
                 color: "#DE6E3C",
               },
             },
             {
-              value: "CSS3",
+              value: "CSS",
               icon: {
                 name: "fab fa-css3-alt",
                 color: "#53A7DC",
               },
             },
             {
-              value: "JavaScript",
+              value: "TypeScript",
               icon: {
                 name: "fab fa-js-square",
-                color: "#F1DE4F",
+                color: "#3178c6",
               },
             },
             {
@@ -520,10 +519,10 @@ export default {
               },
             },
             {
-              value: "PHP",
+              value: "AWS",
               icon: {
-                name: "fab fa-php",
-                color: "#787caf",
+                name: "fab fa-aws",
+                color: "#ef9d38",
               },
             },
           ],
@@ -577,14 +576,14 @@ export default {
           icon: "united-kingdom",
         },
         {
-          language: "French",
-          level: "Working",
-          icon: "france",
+          language: "German",
+          level: "Learning",
+          icon: "germany",
         },
         {
-          language: "Spanish",
-          level: "Working",
-          icon: "spain",
+          language: "French",
+          level: "A2",
+          icon: "france",
         },
       ],
     },
@@ -607,18 +606,19 @@ export default {
           icon: "loyable.png",
           subtitle:
             "Digital loyalty platform for businesses to simplify stamp-driven promotions",
+          link: "https://loyable.com",
         },
         {
-          title: "ECOLab",
-          icon: "ecolab.png",
-          subtitle:
-            "Virtualization of computers in school laboratories, to save energy and be self-sustained with solar panels",
+          title: "Lumus",
+          icon: "lumus.png",
+          subtitle: "AI-powered fault detection on public light poles",
+          link: "https://lumus.app",
         },
         {
-          title: "3D Printing Laboratory",
-          icon: "3dprinting.png",
+          title: "QR Scan & Sync",
+          icon: "qrscan.png",
           subtitle:
-            "3D Printing laboratory in Milan, funded by ACLI, where we do courses for children & students",
+            "Mobile iOS & Android app for Enterprises to scan QR codes and sync with the computer/server",
         },
       ],
     },
